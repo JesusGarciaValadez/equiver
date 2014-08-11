@@ -1,0 +1,39 @@
+
+/* Start Sprite Master CSS */
+.btn_enviar_clic,.btn_enviar_over,.btn_enviar,.btn_facebook,.btn_FB_footer,.btn_google_footer,.btn_google,.btn_twitter_footer,.btn_twitter,.btn_youtube_footer,.btn_youtube,.calendario,.copy_slide1,.doctora_intro_BN,.doctora_intro,.facebook_contacto,.flecha_der_i,.flecha_der,.flecha_izq_over,.flecha_izq,.goole_contacto,.icono_mano_EligePerfil,.icono1_modulo,.icono2_modulo,.icono3_modulo,.imgn_slide1,.logo_footer,.Logo_menu,.mapa,.modulo,.paciente_intro_BN,.paciente_intro,.splash_scroll,.twitter_contacto,.youtube_contacto{display: inline-block;background-repeat: no-repeat;background-image: url('sprite.png');}
+.btn_enviar_clic{background-position:0px 0px;width:115px;height:49px;}
+.btn_enviar_over{background-position:0px -49px;width:115px;height:49px;}
+.btn_enviar{background-position:0px -98px;width:115px;height:49px;}
+.btn_facebook{background-position:0px -147px;width:40px;height:40px;}
+.btn_FB_footer{background-position:0px -187px;width:15px;height:31px;}
+.btn_google_footer{background-position:0px -218px;width:18px;height:27px;}
+.btn_google{background-position:0px -245px;width:40px;height:40px;}
+.btn_twitter_footer{background-position:-15px -187px;width:39px;height:28px;}
+.btn_twitter{background-position:-40px -147px;width:40px;height:40px;}
+.btn_youtube_footer{background-position:-18px -215px;width:31px;height:30px;}
+.btn_youtube{background-position:0px -285px;width:40px;height:40px;}
+.calendario{background-position:0px -325px;width:416px;height:274px;}
+.copy_slide1{background-position:-115px 0px;width:472px;height:275px;}
+.doctora_intro_BN{background-position:0px -599px;width:747px;height:738px;}
+.doctora_intro{background-position:-747px 0px;width:747px;height:738px;}
+.facebook_contacto{background-position:-40px -245px;width:72px;height:72px;}
+.flecha_der_i{background-position:-54px -187px;width:54px;height:54px;}
+.flecha_der{background-position:0px -1337px;width:54px;height:54px;}
+.flecha_izq_over{background-position:0px -1391px;width:54px;height:54px;}
+.flecha_izq{background-position:-54px -1337px;width:54px;height:54px;}
+.goole_contacto{background-position:-108px -1337px;width:72px;height:72px;}
+.icono_mano_EligePerfil{background-position:-54px -1391px;width:23px;height:52px;}
+.icono1_modulo{background-position:-180px -1337px;width:68px;height:66px;}
+.icono2_modulo{background-position:-248px -1337px;width:68px;height:66px;}
+.icono3_modulo{background-position:-316px -1337px;width:68px;height:66px;}
+.imgn_slide1{background-position:-747px -738px;width:1280px;height:717px;}
+.logo_footer{background-position:-384px -1337px;width:207px;height:107px;}
+.Logo_menu{background-position:-591px -1337px;width:135px;height:70px;}
+.mapa{background-position:-1494px 0px;width:467px;height:275px;}
+.modulo{background-position:-1961px 0px;width:846px;height:494px;}
+.paciente_intro_BN{background-position:-2027px -494px;width:577px;height:738px;}
+.paciente_intro{background-position:-2604px -494px;width:577px;height:738px;}
+.splash_scroll{background-position:-77px -1409px;width:60px;height:28px;}
+.twitter_contacto{background-position:-587px 0px;width:72px;height:72px;}
+.youtube_contacto{background-position:-659px 0px;width:72px;height:72px;}
+/* End Sprite Master CSS */
