@@ -6,3 +6,5 @@
 /setup_/templates/language.tpl
 
 /Code/templates/sass/.sass-cache
+
+/bower_components
