@@ -1,34 +1,305 @@
 .wrapper
-    .central
-.logos
+    font: normal 16px/24px Helvetica, Arial, "sans-serif"
+    a
+        text-decoration: none
+        &:hover
+            text-decoration: underline
+    .wide
+        clear: both
+        display: block
+        width: 100%
+        .central
+            clear: both
+            display: block
+            margin: 0 auto
+            width: 960px
+.logo
+    display: inline-block
+    height: auto
+    margin: -35px 0 0
+    position: absolute
+    top: 50%
+    width: auto
+    img
+.logos-small, .logos-big, .logos-footer
+    display: inline-block
+    padding: 0
+    position: absolute
+    top: 50%
     li
         float: left
+        list-style: none inside
         a
-        .facebook-small
+            text-indent: -2000em
+.logos-small
+    margin: -20px 0 0
+    li
+        margin: 0 12px
+        &:last-child
+            margin: 0 24px 0 12px
+        .facebook
             @extend .btn_facebook
-        .google-small
+        .google
             @extend .btn_google
-        .youtube-small
+        .youtube
             @extend .btn_youtube
-        .twitter-small
+        .twitter
             @extend .btn_twitter
-.logo
-    img
+.logos-big
+    li
+        margin: 0 12px
+        &:last-child
+            margin: 0 24px 0 12px
+        .facebook
+            @extend .facebook_contacto
+        .google
+            @extend .goole_contacto
+        .youtube
+            @extend .youtube_contacto
+        .twitter
+            @extend .twitter_contacto
+.logos-footer
+    li
+        margin: 0 12px
+        &:last-child
+            margin: 0 24px 0 12px
+        .facebook
+            @extend .btn_FB_footer
+        .google
+            @extend .btn_google_footer
+        .youtube
+            @extend .btn_youtube_footer
+        .twitter
+            @extend .btn_twitter_footer
 .profile-selector
+    a
+        text-indent: -2000em
     .pacient
+        @extend .paciente_intro_BN
+        &:hover
+            @extend .paciente_intro
     .doctor
+        @extend .doctora_intro_BN
+        &:hover
+            @extend .doctora_intro
     span
+h1, h2, h3, h4, h5, h6
+    font-weight:  normal
+    margin: 0
+.title
+    color: $titles
 .home
-    .central
-
+    .header
+        background-color: $header-background-color
+        height: 76px
         header
+            position: relative
             a
             .logo
-            .logos
+            .logos-small
+                border-right: 2px solid $menu-separator
+                right: 100px
             .intro-link
+                color: $header-title
+                float: right
+                line-height: em( 76, 16 )
+    .main
+        height: 604px
+        main
+            height: 100%
+            a
+                display: inline-block
+                float: left
+                height: 100%
+                width: 50%
+    .nav
+        box-shadow: 0 18px 15px -10px #DFDFDF
+        height: 78px
         nav
+            height: 100%
+            position: relative
             .logo
-            .logos
+            .logos-small
+                left: 17%
             .sections-menu
+                border-left: 2px solid $menu-separator
+                float: right
+                margin: -15px 0 0
+                padding: 0
+                position: relative
+                top: 50%
                 li
+                    float: left
+                    margin: 0 17.5px
+                    &:last-child
+                        margin: 0 35px 0 17.5px
                     a
+                        color: $text-normal
+                        line-height: em( 30, 16 )
+    .div-scrollable
+        height: 593px
+        .scrollable
+            height: 100%
+            position: relative
+            overflow: hidden
+            a
+            .browser
+                margin: -6px 0 0
+                position: absolute
+                text-indent: -2000em
+                top: 50%
+                z-index: 5
+            .prev
+                @extend .flecha_izq
+                left: 20px
+                &:hover
+                    @extend .flecha_izq_over
+            .next
+                @extend .flecha_der
+                right: 20px
+                &:hover
+                    @extend .flecha_der_i
+            .disabled
+                display: none
+            .items
+                height: 100%
+                position: relative
+                width: 2000em
+                z-index: 0
+                div
+                    float: left
+                    height: 100%
+                    position: relative
+                    width: 960px
+                    img
+                        float: left
+                        position: absolute
+                        top: 50%
+                        &:nth-child( 1n )
+                            left: 0
+                            margin: -269px 0 0
+                        &:nth-child( 2n )
+                            left: auto
+                            margin: -137.5px 0 0
+                            right: 0
+            .navigator
+                bottom: 47px
+                height: 12px
+                margin: 0 auto
+                position: relative
+                a
+                    @extend .slide_control_normal
+                    &:hover, .current
+                        @extend .slide_control_current
+    .modulos-mas-title
+        background-color:  $header-background-color
+        height: 140px
+        position: relative
+        .central
+            height: 100%
+            position: relative
+            a
+            .logo
+                img
+            h1
+                color: $text-normal
+                display: inline-block;
+                margin: -12px 0 0;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                strong
+
+    .modulos-mas-content
+        .central
+            h2
+            p
+            ul
+                li
+                .people
+                .instrument
+                .heart
+            img
+    .schedule-events
+        background-color:  $header-background-color
+        .central
+            h2.title
+                strong
+            .events-indicator-container
+                > div
+                    .event-description
+                        h3
+                            strong
+                        p
+                .event-1
+                    img
+                .event-2
+                    img
+                .event-3
+                    img
+            .events-descriptions-container
+                > div 
+                    h4.title
+                    p
+                .event-1
+                .event-2
+                .event-3
+    .form
+        form
+            fieldset
+            .left
+                h5
+                p
+                .logos-big
+                    li
+                        a
+                        .facebook
+                        .twitter
+                        .youtube
+                        .google
+            .right
+                legend
+                .input
+                    input[type="text"], textarea
+                        background-color:  $input-background
+                .text
+                    input[type="text"]
+                .textarea
+                    textarea
+                .submit
+                    input[type="submit"]
+    .site-map
+        background-color:  $footer-background-links
+        .central
+            .logo
+                img
+            .site-map-titles
+                li
+            .site-map-links
+                ul
+                    float: left
+                    li
+                        list-style: none inside
+    .social-footer-links
+        background-color: $footer-background-social
+        .central
+            h6, p
+                color: $white-color
+            h6
+                font-size: em( 18, 16 )
+            p
+            .logos-footer
+                li
+                    list-style: none inside
+                    a
+                        color:  $text-normal
+                    .facebook
+                    .twitter
+                    .youtube
+                    .google
+    .footer
+        background-color:  $footer-background-links
+        footer
+            p
+                color: $text-normal
+                margin: 0

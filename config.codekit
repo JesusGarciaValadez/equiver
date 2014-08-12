@@ -425,7 +425,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/home\/imgn_slide1.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/assets\/img\/home\/linea_EligePerfil.png": {
 		"fileType": 32768,
@@ -515,6 +515,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/assets\/img\/home\/slide_control_active.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1086,
+		"inputAbbreviatedPath": "\/assets\/img\/home\/slide_control_active.png",
+		"outputAbbreviatedPath": "\/assets\/img\/home\/slide_control_active.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/img\/home\/slide_control_normal.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1081,
+		"inputAbbreviatedPath": "\/assets\/img\/home\/slide_control_normal.png",
+		"outputAbbreviatedPath": "\/assets\/img\/home\/slide_control_normal.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/img\/home\/splash_scroll.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -530,7 +552,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 4.1943e+06,
+		"initialSize": 2.36432e+06,
 		"inputAbbreviatedPath": "\/assets\/img\/home\/sprite.png",
 		"outputAbbreviatedPath": "\/assets\/img\/home\/sprite.png",
 		"outputPathIsOutsideProject": 0,
@@ -3577,21 +3599,21 @@
 		"shouldRunBless": 1,
 		"useLibsass": false
 		},
-	"\/Code\/templates\/sass\/_sprite.sass": {
+	"\/Code\/templates\/sass\/_sprite.scss": {
 		"createSourceMap": 1,
 		"debugStyle": 0,
 		"decimalPrecision": 2,
-		"fileType": 2,
-		"ignore": 0,
+		"fileType": 4,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/Code\/templates\/sass\/_sprite.sass",
+		"inputAbbreviatedPath": "\/Code\/templates\/sass\/_sprite.scss",
 		"outputAbbreviatedPath": "\/assets\/css\/_sprite.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 1,
-		"useLibsass": false
+		"useLibsass": 0
 		},
 	"\/Code\/templates\/sass\/_typographys.sass": {
 		"createSourceMap": 1,
@@ -3652,9 +3674,9 @@
 		"outputAbbreviatedPath": "\/assets\/css\/main.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 3,
+		"outputStyle": 0,
 		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 1,
+		"shouldRunBless": 0,
 		"useLibsass": false
 		},
 	"\/config.core.php": {
