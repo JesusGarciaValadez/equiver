@@ -2,6 +2,7 @@
 /* ==========================================================================
  * HTML5 display definitions
  * ========================================================================== */
+/* line 9, ../../Code/templates/sass/_normalize.sass */
 article,
 aside,
 details,
@@ -19,6 +20,7 @@ summary {
 /*
  * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
  */
+/* line 28, ../../Code/templates/sass/_normalize.sass */
 audio,
 canvas,
 video {
@@ -30,6 +32,7 @@ video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
+/* line 41, ../../Code/templates/sass/_normalize.sass */
 audio:not([controls]) {
   display: none;
   height: 0; }
@@ -38,6 +41,7 @@ audio:not([controls]) {
  * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
  * Known issue: no IE 6 support.
  */
+/* line 51, ../../Code/templates/sass/_normalize.sass */
 [hidden] {
   display: none; }
 
@@ -50,6 +54,7 @@ audio:not([controls]) {
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
+/* line 66, ../../Code/templates/sass/_normalize.sass */
 html {
   font-size: 100%;
   -ms-text-size-adjust: 100%;
@@ -59,6 +64,7 @@ html {
  * Address `font-family` inconsistency between `textarea` and other form
  * elements.
  */
+/* line 77, ../../Code/templates/sass/_normalize.sass */
 html,
 button,
 input,
@@ -69,6 +75,7 @@ textarea {
 /*
  * Address margins handled incorrectly in IE 6/7.
  */
+/* line 89, ../../Code/templates/sass/_normalize.sass */
 body {
   margin: 0; }
 
@@ -78,12 +85,14 @@ body {
 /*
  * Address `outline` inconsistency between Chrome and other browsers.
  */
+/* line 101, ../../Code/templates/sass/_normalize.sass */
 a:focus {
   outline: thin dotted; }
 
 /*
  * Improve readability when focused and also mouse hovered in all browsers.
  */
+/* line 109, ../../Code/templates/sass/_normalize.sass */
 a:active,
 a:hover {
   outline: 0; }
@@ -96,26 +105,32 @@ a:hover {
  * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
  * and Chrome.
  */
+/* line 124, ../../Code/templates/sass/_normalize.sass */
 h1 {
   font-size: 2em;
   margin: 0.67em 0; }
 
+/* line 129, ../../Code/templates/sass/_normalize.sass */
 h2 {
   font-size: 1.5em;
   margin: 0.83em 0; }
 
+/* line 134, ../../Code/templates/sass/_normalize.sass */
 h3 {
   font-size: 1.17em;
   margin: 1em 0; }
 
+/* line 139, ../../Code/templates/sass/_normalize.sass */
 h4 {
   font-size: 1em;
   margin: 1.33em 0; }
 
+/* line 144, ../../Code/templates/sass/_normalize.sass */
 h5 {
   font-size: 0.83em;
   margin: 1.67em 0; }
 
+/* line 149, ../../Code/templates/sass/_normalize.sass */
 h6 {
   font-size: 0.67em;
   margin: 2.33em 0; }
@@ -123,22 +138,26 @@ h6 {
 /*
  * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
  */
+/* line 158, ../../Code/templates/sass/_normalize.sass */
 abbr[title] {
   border-bottom: 1px dotted; }
 
 /*
  * Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
  */
+/* line 166, ../../Code/templates/sass/_normalize.sass */
 b,
 strong {
   font-weight: bold; }
 
+/* line 171, ../../Code/templates/sass/_normalize.sass */
 blockquote {
   margin: 1em 40px; }
 
 /*
  * Address styling not present in Safari 5 and Chrome.
  */
+/* line 179, ../../Code/templates/sass/_normalize.sass */
 dfn {
   font-style: italic; }
 
@@ -146,6 +165,7 @@ dfn {
  * Address differences between Firefox and other browsers.
  * Known issue: no IE 6/7 normalization.
  */
+/* line 188, ../../Code/templates/sass/_normalize.sass */
 hr {
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
@@ -155,6 +175,7 @@ hr {
 /*
  * Address styling not present in IE 6/7/8/9.
  */
+/* line 198, ../../Code/templates/sass/_normalize.sass */
 mark {
   background: yellow;
   color: black; }
@@ -162,6 +183,7 @@ mark {
 /*
  * Address margins set differently in IE 6/7.
  */
+/* line 207, ../../Code/templates/sass/_normalize.sass */
 p,
 pre {
   margin: 1em 0; }
@@ -169,6 +191,7 @@ pre {
 /*
  * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
  */
+/* line 216, ../../Code/templates/sass/_normalize.sass */
 code,
 kbd,
 pre,
@@ -180,6 +203,7 @@ samp {
 /*
  * Improve readability of pre-formatted text in all browsers.
  */
+/* line 229, ../../Code/templates/sass/_normalize.sass */
 pre {
   white-space: pre;
   white-space: pre-wrap;
@@ -188,12 +212,14 @@ pre {
 /*
  * Address CSS quotes not supported in IE 6/7.
  */
+/* line 239, ../../Code/templates/sass/_normalize.sass */
 q {
   quotes: none; }
 
 /*
  * Address `quotes` property not supported in Safari 4.
  */
+/* line 247, ../../Code/templates/sass/_normalize.sass */
 q:before,
 q:after {
   content: "";
@@ -202,12 +228,14 @@ q:after {
 /*
  * Address inconsistent and variable font size in all browsers.
  */
+/* line 257, ../../Code/templates/sass/_normalize.sass */
 small {
   font-size: 80%; }
 
 /*
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
+/* line 265, ../../Code/templates/sass/_normalize.sass */
 sub,
 sup {
   font-size: 75%;
@@ -215,9 +243,11 @@ sup {
   position: relative;
   vertical-align: baseline; }
 
+/* line 273, ../../Code/templates/sass/_normalize.sass */
 sup {
   top: -0.5em; }
 
+/* line 277, ../../Code/templates/sass/_normalize.sass */
 sub {
   bottom: -0.25em; }
 
@@ -227,18 +257,21 @@ sub {
 /*
  * Address margins set differently in IE 6/7.
  */
+/* line 289, ../../Code/templates/sass/_normalize.sass */
 dl,
 menu,
 ol,
 ul {
   margin: 1em 0; }
 
+/* line 296, ../../Code/templates/sass/_normalize.sass */
 dd {
   margin: 0 0 0 40px; }
 
 /*
  * Address paddings set differently in IE 6/7.
  */
+/* line 304, ../../Code/templates/sass/_normalize.sass */
 menu,
 ol,
 ul {
@@ -247,6 +280,7 @@ ul {
 /*
  * Correct list images handled incorrectly in IE 7.
  */
+/* line 314, ../../Code/templates/sass/_normalize.sass */
 nav ul,
 nav ol {
   list-style: none;
@@ -259,6 +293,7 @@ nav ol {
  * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
  * 2. Improve image quality when scaled in IE 7.
  */
+/* line 329, ../../Code/templates/sass/_normalize.sass */
 img {
   border: 0;
   -ms-interpolation-mode: bicubic; }
@@ -266,6 +301,7 @@ img {
 /*
  * Correct overflow displayed oddly in IE 9.
  */
+/* line 338, ../../Code/templates/sass/_normalize.sass */
 svg:not(:root) {
   overflow: hidden; }
 
@@ -275,6 +311,7 @@ svg:not(:root) {
 /*
  * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
  */
+/* line 350, ../../Code/templates/sass/_normalize.sass */
 figure {
   margin: 0; }
 
@@ -284,12 +321,14 @@ figure {
 /*
  * Correct margin displayed oddly in IE 6/7.
  */
+/* line 362, ../../Code/templates/sass/_normalize.sass */
 form {
   margin: 0; }
 
 /*
  * Define consistent border, margin, and padding.
  */
+/* line 370, ../../Code/templates/sass/_normalize.sass */
 fieldset {
   border: 1px solid silver;
   margin: 0 2px;
@@ -300,6 +339,7 @@ fieldset {
  * 2. Correct text not wrapping in Firefox 3.
  * 3. Correct alignment displayed oddly in IE 6/7.
  */
+/* line 382, ../../Code/templates/sass/_normalize.sass */
 legend {
   border: 0;
   padding: 0;
@@ -312,6 +352,7 @@ legend {
  *    and Chrome.
  * 3. Improve appearance and consistency in all browsers.
  */
+/* line 396, ../../Code/templates/sass/_normalize.sass */
 button,
 input,
 select,
@@ -325,6 +366,7 @@ textarea {
  * Address Firefox 3+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
+/* line 411, ../../Code/templates/sass/_normalize.sass */
 button,
 input {
   line-height: normal; }
@@ -335,6 +377,7 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
+/* line 423, ../../Code/templates/sass/_normalize.sass */
 button,
 select {
   text-transform: none; }
@@ -352,6 +395,7 @@ select {
  * -webkit-appearance: button /* 2 */
  * cursor: pointer /* 3 */
  *overflow: visible  /* 4 */
+/* line 443, ../../Code/templates/sass/_normalize.sass */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -363,6 +407,7 @@ input[type="submit"] {
 /*
  * Re-set default cursor for disabled elements.
  */
+/* line 456, ../../Code/templates/sass/_normalize.sass */
 button[disabled],
 html input[disabled] {
   cursor: default; }
@@ -373,6 +418,7 @@ html input[disabled] {
  * 3. Remove excess padding in IE 7.
  *    Known issue: excess padding remains in IE 6.
  */
+/* line 468, ../../Code/templates/sass/_normalize.sass */
 input[type="checkbox"],
 input[type="radio"] {
   -webkit-box-sizing: border-box;
@@ -387,6 +433,7 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
+/* line 482, ../../Code/templates/sass/_normalize.sass */
 input[type="search"] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
@@ -397,6 +444,7 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
+/* line 494, ../../Code/templates/sass/_normalize.sass */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
@@ -404,6 +452,7 @@ input[type="search"]::-webkit-search-decoration {
 /*
  * Remove inner padding and border in Firefox 3+.
  */
+/* line 503, ../../Code/templates/sass/_normalize.sass */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -413,6 +462,7 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 6/7/8/9.
  * 2. Improve readability and alignment in all browsers.
  */
+/* line 514, ../../Code/templates/sass/_normalize.sass */
 textarea {
   overflow: auto;
   vertical-align: top; }
@@ -423,6 +473,7 @@ textarea {
 /*
  * Remove most spacing between table cells.
  */
+/* line 527, ../../Code/templates/sass/_normalize.sass */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
@@ -435,6 +486,7 @@ table {
 /* ==========================================================================
  *   Base styles: opinionated defaults
  *   ========================================================================== */
+/* line 16, ../../Code/templates/sass/main.sass */
 html,
 button,
 input,
@@ -442,6 +494,7 @@ select,
 textarea {
   color: #222222; }
 
+/* line 23, ../../Code/templates/sass/main.sass */
 html {
   font-size: 1em;
   line-height: 1.4; }
@@ -450,16 +503,22 @@ html {
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
+/* line 33, ../../Code/templates/sass/main.sass */
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none; }
 
+/* line 37, ../../Code/templates/sass/main.sass */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
 ::selection {
   background: #b3d4fc;
   text-shadow: none; }
 
 /* A better looking default horizontal rule
  */
+/* line 45, ../../Code/templates/sass/main.sass */
 hr {
   display: block;
   height: 1px;
@@ -471,6 +530,7 @@ hr {
 /* Remove the gap between images, videos, audio and canvas and the bottom of
  * their containers: h5bp.com/i/440
  */
+/* line 58, ../../Code/templates/sass/main.sass */
 audio,
 canvas,
 img,
@@ -479,6 +539,7 @@ video {
 
 /* Remove default fieldset styles.
  */
+/* line 68, ../../Code/templates/sass/main.sass */
 fieldset {
   border: 0;
   margin: 0;
@@ -486,12 +547,14 @@ fieldset {
 
 /* Allow only vertical resizing of textareas.
  */
+/* line 77, ../../Code/templates/sass/main.sass */
 textarea {
   resize: vertical; }
 
 /* ==========================================================================
  * Browse Happy prompt
  * ========================================================================== */
+/* line 84, ../../Code/templates/sass/main.sass */
 .browsehappy {
   margin: 0.2em 0;
   background: #cccccc;
@@ -502,284 +565,371 @@ textarea {
  * Author's custom styles
  * ========================================================================== */
 /* Start Sprite Master CSS */
+/* line 3, ../../Code/templates/sass/_sprite.scss */
 .btn_enviar_clic, .btn_enviar_over, .btn_enviar, .btn_facebook, .logos-small li .facebook, .btn_FB_footer, .logos-footer li .facebook, .btn_google_footer, .logos-footer li .google, .btn_google, .logos-small li .google, .btn_twitter_footer, .logos-footer li .twitter, .btn_twitter, .logos-small li .twitter, .btn_youtube_footer, .logos-footer li .youtube, .btn_youtube, .logos-small li .youtube, .calendario, .copy_slide1, .doctora_intro_BN, .profile-selector .doctor, .doctora_intro, .profile-selector .doctor:hover, .facebook_contacto, .logos-big li .facebook, .flecha_der_i, .home .div-scrollable .scrollable .next:hover, .flecha_der, .home .div-scrollable .scrollable .next, .flecha_izq_over, .home .div-scrollable .scrollable .prev:hover, .flecha_izq, .home .div-scrollable .scrollable .prev, .goole_contacto, .logos-big li .google, .icono_mano_EligePerfil, .icono1_modulo, .icono2_modulo, .icono3_modulo, .imgn_slide1, .logo_footer, .Logo_menu, .mapa, .modulo, .paciente_intro_BN, .profile-selector .pacient, .paciente_intro, .profile-selector .pacient:hover, .twitter_contacto, .logos-big li .twitter, .youtube_contacto, .logos-big li .youtube, .slide_control_active, .slide_control_normal, .home .div-scrollable .scrollable .navigator a {
   display: inline-block;
   background-repeat: no-repeat;
   background-image: url("../../assets/img/home/sprite.png"); }
 
+/* line 4, ../../Code/templates/sass/_sprite.scss */
 .btn_enviar_clic {
   background-position: 0px 0px;
   width: 115px;
   height: 49px; }
 
+/* line 5, ../../Code/templates/sass/_sprite.scss */
 .btn_enviar_over {
   background-position: 0px -49px;
   width: 115px;
   height: 49px; }
 
+/* line 6, ../../Code/templates/sass/_sprite.scss */
 .btn_enviar {
   background-position: 0px -98px;
   width: 115px;
   height: 49px; }
 
+/* line 7, ../../Code/templates/sass/_sprite.scss */
 .btn_facebook, .logos-small li .facebook {
   background-position: 0px -147px;
   width: 40px;
   height: 40px; }
 
+/* line 8, ../../Code/templates/sass/_sprite.scss */
 .btn_FB_footer, .logos-footer li .facebook {
   background-position: 0px -187px;
   width: 15px;
   height: 31px; }
 
+/* line 9, ../../Code/templates/sass/_sprite.scss */
 .btn_google_footer, .logos-footer li .google {
   background-position: 0px -218px;
   width: 18px;
   height: 27px; }
 
+/* line 10, ../../Code/templates/sass/_sprite.scss */
 .btn_google, .logos-small li .google {
   background-position: 0px -245px;
   width: 40px;
   height: 40px; }
 
+/* line 11, ../../Code/templates/sass/_sprite.scss */
 .btn_twitter_footer, .logos-footer li .twitter {
   background-position: -15px -187px;
   width: 39px;
   height: 28px; }
 
+/* line 12, ../../Code/templates/sass/_sprite.scss */
 .btn_twitter, .logos-small li .twitter {
   background-position: -40px -147px;
   width: 40px;
   height: 40px; }
 
+/* line 13, ../../Code/templates/sass/_sprite.scss */
 .btn_youtube_footer, .logos-footer li .youtube {
   background-position: -18px -215px;
   width: 31px;
   height: 30px; }
 
+/* line 14, ../../Code/templates/sass/_sprite.scss */
 .btn_youtube, .logos-small li .youtube {
   background-position: 0px -285px;
   width: 40px;
   height: 40px; }
 
+/* line 15, ../../Code/templates/sass/_sprite.scss */
 .calendario {
   background-position: 0px -325px;
   width: 416px;
   height: 274px; }
 
+/* line 16, ../../Code/templates/sass/_sprite.scss */
 .copy_slide1 {
   background-position: -115px 0px;
   width: 472px;
   height: 275px; }
 
+/* line 17, ../../Code/templates/sass/_sprite.scss */
 .doctora_intro_BN, .profile-selector .doctor {
   background-position: 0px -599px;
   width: 747px;
   height: 738px; }
 
+/* line 18, ../../Code/templates/sass/_sprite.scss */
 .doctora_intro, .profile-selector .doctor:hover {
   background-position: -747px 0px;
   width: 747px;
   height: 738px; }
 
+/* line 19, ../../Code/templates/sass/_sprite.scss */
 .facebook_contacto, .logos-big li .facebook {
   background-position: -40px -245px;
   width: 72px;
   height: 72px; }
 
+/* line 20, ../../Code/templates/sass/_sprite.scss */
 .flecha_der_i, .home .div-scrollable .scrollable .next:hover {
   background-position: -54px -187px;
   width: 54px;
   height: 54px; }
 
+/* line 21, ../../Code/templates/sass/_sprite.scss */
 .flecha_der, .home .div-scrollable .scrollable .next {
   background-position: 0px -1337px;
   width: 54px;
   height: 54px; }
 
+/* line 22, ../../Code/templates/sass/_sprite.scss */
 .flecha_izq_over, .home .div-scrollable .scrollable .prev:hover {
   background-position: 0px -1391px;
   width: 54px;
   height: 54px; }
 
+/* line 23, ../../Code/templates/sass/_sprite.scss */
 .flecha_izq, .home .div-scrollable .scrollable .prev {
   background-position: -54px -1337px;
   width: 54px;
   height: 54px; }
 
+/* line 24, ../../Code/templates/sass/_sprite.scss */
 .goole_contacto, .logos-big li .google {
   background-position: -108px -1337px;
   width: 72px;
   height: 72px; }
 
+/* line 25, ../../Code/templates/sass/_sprite.scss */
 .icono_mano_EligePerfil {
   background-position: -54px -1391px;
   width: 23px;
   height: 52px; }
 
+/* line 26, ../../Code/templates/sass/_sprite.scss */
 .icono1_modulo {
   background-position: -180px -1337px;
   width: 68px;
   height: 66px; }
 
+/* line 27, ../../Code/templates/sass/_sprite.scss */
 .icono2_modulo {
   background-position: -248px -1337px;
   width: 68px;
   height: 66px; }
 
+/* line 28, ../../Code/templates/sass/_sprite.scss */
 .icono3_modulo {
   background-position: -316px -1337px;
   width: 68px;
   height: 66px; }
 
+/* line 29, ../../Code/templates/sass/_sprite.scss */
 .imgn_slide1 {
   background-position: -747px -738px;
   width: 1280px;
   height: 717px; }
 
+/* line 30, ../../Code/templates/sass/_sprite.scss */
 .logo_footer {
   background-position: -384px -1337px;
   width: 207px;
   height: 107px; }
 
+/* line 31, ../../Code/templates/sass/_sprite.scss */
 .Logo_menu {
   background-position: -591px -1337px;
   width: 135px;
   height: 70px; }
 
+/* line 32, ../../Code/templates/sass/_sprite.scss */
 .mapa {
   background-position: -1494px 0px;
   width: 467px;
   height: 275px; }
 
+/* line 33, ../../Code/templates/sass/_sprite.scss */
 .modulo {
   background-position: -1961px 0px;
   width: 846px;
   height: 494px; }
 
+/* line 34, ../../Code/templates/sass/_sprite.scss */
 .paciente_intro_BN, .profile-selector .pacient {
   background-position: -2027px -494px;
   width: 577px;
   height: 738px; }
 
+/* line 35, ../../Code/templates/sass/_sprite.scss */
 .paciente_intro, .profile-selector .pacient:hover {
   background-position: -2604px -494px;
   width: 577px;
   height: 738px; }
 
+/* line 36, ../../Code/templates/sass/_sprite.scss */
 .twitter_contacto, .logos-big li .twitter {
   background-position: -587px 0px;
   width: 72px;
   height: 72px; }
 
+/* line 37, ../../Code/templates/sass/_sprite.scss */
 .youtube_contacto, .logos-big li .youtube {
   background-position: -659px 0px;
   width: 72px;
   height: 72px; }
 
+/* line 38, ../../Code/templates/sass/_sprite.scss */
 .slide_control_current, .home .div-scrollable .scrollable .navigator a:hover, .home .div-scrollable .scrollable .navigator a .current {
   background-position: -54px -1443px;
   width: 12px;
   height: 12px; }
 
+/* line 39, ../../Code/templates/sass/_sprite.scss */
 .slide_control_normal, .home .div-scrollable .scrollable .navigator a {
   background-position: -66px -1443px;
   width: 12px;
   height: 12px; }
 
 /* End Sprite Master CSS */
+/* line 1, ../../Code/templates/sass/home.sass */
 .wrapper {
   font: normal 16px/24px Helvetica, Arial, "sans-serif"; }
+  /* line 3, ../../Code/templates/sass/home.sass */
   .wrapper a {
     text-decoration: none; }
+    /* line 5, ../../Code/templates/sass/home.sass */
     .wrapper a:hover {
       text-decoration: underline; }
+  /* line 7, ../../Code/templates/sass/home.sass */
   .wrapper .wide {
     clear: both;
     display: block;
     width: 100%; }
+    /* line 11, ../../Code/templates/sass/home.sass */
     .wrapper .wide .central {
       clear: both;
       display: block;
       margin: 0 auto;
       width: 960px; }
 
-.logo {
+/* line 16, ../../Code/templates/sass/home.sass */
+.logo, .logo-footer {
   display: inline-block;
   height: auto;
-  margin: -35px 0 0;
   position: absolute;
   top: 50%;
   width: auto; }
 
+/* line 23, ../../Code/templates/sass/home.sass */
+.logo {
+  margin: -35px 0 0; }
+
+/* line 26, ../../Code/templates/sass/home.sass */
+.logo-footer {
+  margin: -53.5px 0 0; }
+
+/* line 29, ../../Code/templates/sass/home.sass */
 .logos-small, .logos-big, .logos-footer {
   display: inline-block;
   padding: 0;
   position: absolute;
   top: 50%; }
+  /* line 34, ../../Code/templates/sass/home.sass */
   .logos-small li, .logos-big li, .logos-footer li {
     float: left;
     list-style: none inside; }
+    /* line 37, ../../Code/templates/sass/home.sass */
     .logos-small li a, .logos-big li a, .logos-footer li a {
       text-indent: -2000em; }
 
+/* line 39, ../../Code/templates/sass/home.sass */
 .logos-small {
   margin: -20px 0 0; }
+  /* line 41, ../../Code/templates/sass/home.sass */
   .logos-small li {
     margin: 0 12px; }
+    /* line 43, ../../Code/templates/sass/home.sass */
     .logos-small li:last-child {
       margin: 0 24px 0 12px; }
 
-.logos-big li {
-  margin: 0 12px; }
-  .logos-big li:last-child {
-    margin: 0 24px 0 12px; }
+/* line 53, ../../Code/templates/sass/home.sass */
+.logos-big {
+  margin: 25px 0 0;
+  position: static; }
+  /* line 56, ../../Code/templates/sass/home.sass */
+  .logos-big li {
+    margin: 0 7px; }
+    /* line 58, ../../Code/templates/sass/home.sass */
+    .logos-big li:first-child {
+      margin: 0 7px 0 0; }
+    /* line 60, ../../Code/templates/sass/home.sass */
+    .logos-big li:last-child {
+      margin: 0 0 0 7px; }
+    /* line 62, ../../Code/templates/sass/home.sass */
+    .logos-big li a {
+      float: left; }
 
-.logos-footer li {
-  margin: 0 12px; }
-  .logos-footer li:last-child {
-    margin: 0 24px 0 12px; }
+/* line 72, ../../Code/templates/sass/home.sass */
+.logos-footer {
+  margin: -15.5px 0 0; }
+  /* line 74, ../../Code/templates/sass/home.sass */
+  .logos-footer li {
+    margin: 0; }
+    /* line 76, ../../Code/templates/sass/home.sass */
+    .logos-footer li:last-child {
+      margin: 0 24px 0 12px; }
 
+/* line 87, ../../Code/templates/sass/home.sass */
 .profile-selector a {
   text-indent: -2000em; }
 
+/* line 98, ../../Code/templates/sass/home.sass */
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   margin: 0; }
 
+/* line 101, ../../Code/templates/sass/home.sass */
 .title {
   color: #d63234; }
 
+/* line 104, ../../Code/templates/sass/home.sass */
 .home .header {
   background-color: #f3f2f7;
   height: 76px; }
+  /* line 107, ../../Code/templates/sass/home.sass */
   .home .header header {
     position: relative; }
+    /* line 111, ../../Code/templates/sass/home.sass */
     .home .header header .logos-small {
       border-right: 2px solid #bddc8c;
       right: 100px; }
+    /* line 114, ../../Code/templates/sass/home.sass */
     .home .header header .intro-link {
       color: #2f730d;
       float: right;
       line-height: 4.75em; }
+/* line 118, ../../Code/templates/sass/home.sass */
 .home .main {
   height: 604px; }
+  /* line 120, ../../Code/templates/sass/home.sass */
   .home .main main {
     height: 100%; }
+    /* line 122, ../../Code/templates/sass/home.sass */
     .home .main main a {
       display: inline-block;
       float: left;
       height: 100%;
       width: 50%; }
+/* line 127, ../../Code/templates/sass/home.sass */
 .home .nav {
   -webkit-box-shadow: 0 18px 15px -10px #dfdfdf;
           box-shadow: 0 18px 15px -10px #dfdfdf;
   height: 78px; }
+  /* line 130, ../../Code/templates/sass/home.sass */
   .home .nav nav {
     height: 100%;
     position: relative; }
+    /* line 134, ../../Code/templates/sass/home.sass */
     .home .nav nav .logos-small {
       left: 17%; }
+    /* line 136, ../../Code/templates/sass/home.sass */
     .home .nav nav .sections-menu {
       border-left: 2px solid #bddc8c;
       float: right;
@@ -787,97 +937,445 @@ h1, h2, h3, h4, h5, h6 {
       padding: 0;
       position: relative;
       top: 50%; }
+      /* line 143, ../../Code/templates/sass/home.sass */
       .home .nav nav .sections-menu li {
         float: left;
         margin: 0 17.5px; }
+        /* line 146, ../../Code/templates/sass/home.sass */
         .home .nav nav .sections-menu li:last-child {
           margin: 0 35px 0 17.5px; }
+        /* line 148, ../../Code/templates/sass/home.sass */
         .home .nav nav .sections-menu li a {
           color: #616161;
           line-height: 1.88em; }
+/* line 151, ../../Code/templates/sass/home.sass */
 .home .div-scrollable {
   height: 593px; }
+  /* line 153, ../../Code/templates/sass/home.sass */
   .home .div-scrollable .scrollable {
     height: 100%;
     position: relative;
     overflow: hidden; }
+    /* line 158, ../../Code/templates/sass/home.sass */
     .home .div-scrollable .scrollable .browser {
       margin: -6px 0 0;
       position: absolute;
       text-indent: -2000em;
       top: 50%;
       z-index: 5; }
+    /* line 164, ../../Code/templates/sass/home.sass */
     .home .div-scrollable .scrollable .prev {
       left: 20px; }
+    /* line 169, ../../Code/templates/sass/home.sass */
     .home .div-scrollable .scrollable .next {
       right: 20px; }
+    /* line 174, ../../Code/templates/sass/home.sass */
     .home .div-scrollable .scrollable .disabled {
       display: none; }
+    /* line 176, ../../Code/templates/sass/home.sass */
     .home .div-scrollable .scrollable .items {
       height: 100%;
       position: relative;
       width: 2000em;
       z-index: 0; }
+      /* line 181, ../../Code/templates/sass/home.sass */
       .home .div-scrollable .scrollable .items div {
         float: left;
         height: 100%;
         position: relative;
         width: 960px; }
+        /* line 186, ../../Code/templates/sass/home.sass */
         .home .div-scrollable .scrollable .items div img {
           float: left;
           position: absolute;
           top: 50%; }
+          /* line 190, ../../Code/templates/sass/home.sass */
           .home .div-scrollable .scrollable .items div img:nth-child(1n) {
             left: 0;
             margin: -269px 0 0; }
+          /* line 193, ../../Code/templates/sass/home.sass */
           .home .div-scrollable .scrollable .items div img:nth-child(2n) {
             left: auto;
             margin: -137.5px 0 0;
             right: 0; }
+    /* line 197, ../../Code/templates/sass/home.sass */
     .home .div-scrollable .scrollable .navigator {
       bottom: 47px;
       height: 12px;
       margin: 0 auto;
       position: relative; }
+/* line 206, ../../Code/templates/sass/home.sass */
 .home .modulos-mas-title {
   background-color: #f3f2f7;
-  height: 140px;
+  height: 145px;
   position: relative; }
+  /* line 210, ../../Code/templates/sass/home.sass */
   .home .modulos-mas-title .central {
-    height: 100%; }
+    height: 100%;
+    position: relative; }
+    /* line 214, ../../Code/templates/sass/home.sass */
+    .home .modulos-mas-title .central .logo {
+      margin-left: 45px; }
+    /* line 217, ../../Code/templates/sass/home.sass */
     .home .modulos-mas-title .central h1 {
-      color: #616161; }
+      color: #616161;
+      display: inline-block;
+      font-size: 2.06em;
+      line-height: 1em;
+      margin: -16.5px 0 0;
+      position: absolute;
+      right: 0;
+      top: 50%; }
+/* line 228, ../../Code/templates/sass/home.sass */
+.home .modulos-mas-content {
+  height: 522px; }
+  /* line 230, ../../Code/templates/sass/home.sass */
+  .home .modulos-mas-content .central {
+    padding: 96px 0 0;
+    position: relative; }
+    /* line 233, ../../Code/templates/sass/home.sass */
+    .home .modulos-mas-content .central h2, .home .modulos-mas-content .central p, .home .modulos-mas-content .central ul {
+      clear: left;
+      display: inline-block;
+      float: left;
+      width: 305px; }
+    /* line 238, ../../Code/templates/sass/home.sass */
+    .home .modulos-mas-content .central h2, .home .modulos-mas-content .central p {
+      text-align: center; }
+    /* line 240, ../../Code/templates/sass/home.sass */
+    .home .modulos-mas-content .central p, .home .modulos-mas-content .central ul li p {
+      color: #616161;
+      font-size: 0.63em;
+      line-height: 1em; }
+    /* line 244, ../../Code/templates/sass/home.sass */
+    .home .modulos-mas-content .central h2 {
+      color: #d63234;
+      font-size: 0.98em;
+      line-height: 1.02em;
+      margin: 0 0 0 47px; }
+    /* line 249, ../../Code/templates/sass/home.sass */
+    .home .modulos-mas-content .central p {
+      margin: 10px 0 0 47px; }
+    /* line 251, ../../Code/templates/sass/home.sass */
+    .home .modulos-mas-content .central ul {
+      -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+              box-sizing: border-box;
+      margin: 49px 0 0;
+      padding: 0 0 0 175px; }
+      /* line 255, ../../Code/templates/sass/home.sass */
+      .home .modulos-mas-content .central ul li {
+        height: 55px;
+        margin: 28px 0; }
+        /* line 258, ../../Code/templates/sass/home.sass */
+        .home .modulos-mas-content .central ul li:first-child {
+          margin: 0 0 28px; }
+        /* line 260, ../../Code/templates/sass/home.sass */
+        .home .modulos-mas-content .central ul li:last-child {
+          margin: 28px 0 0; }
+        /* line 262, ../../Code/templates/sass/home.sass */
+        .home .modulos-mas-content .central ul li p {
+          line-height: 4.13em;
+          width: 100%; }
+      /* line 265, ../../Code/templates/sass/home.sass */
+      .home .modulos-mas-content .central ul .people {
+        list-style: url("../../assets/img/home/icono1_modulo.png") outside; }
+      /* line 267, ../../Code/templates/sass/home.sass */
+      .home .modulos-mas-content .central ul .instrument {
+        list-style: url("../../assets/img/home/icono2_modulo.png") outside; }
+      /* line 269, ../../Code/templates/sass/home.sass */
+      .home .modulos-mas-content .central ul .heart {
+        list-style: url("../../assets/img/home/icono3_modulo.png") outside; }
+/* line 272, ../../Code/templates/sass/home.sass */
 .home .schedule-events {
-  background-color: #f3f2f7; }
-.home .form form .right .input input[type="text"], .home .form form .right .input textarea {
-  background-color: #e5e5e5; }
+  background-color: #f3f2f7;
+  height: 590px; }
+  /* line 275, ../../Code/templates/sass/home.sass */
+  .home .schedule-events .central {
+    padding: 65px 0 0; }
+    /* line 277, ../../Code/templates/sass/home.sass */
+    .home .schedule-events .central h2 {
+      font-size: 1.94em;
+      height: 23px;
+      line-height: 0.97em;
+      margin: 0 0 78px;
+      text-align: center; }
+    /* line 285, ../../Code/templates/sass/home.sass */
+    .home .schedule-events .central .events-indicator-container > div {
+      float: left;
+      height: 225px;
+      overflow: hidden;
+      position: relative;
+      width: 320px; }
+      /* line 292, ../../Code/templates/sass/home.sass */
+      .home .schedule-events .central .events-indicator-container > div:hover .event-description {
+        display: inline-block; }
+      /* line 294, ../../Code/templates/sass/home.sass */
+      .home .schedule-events .central .events-indicator-container > div .event-description {
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%; }
+        /* line 302, ../../Code/templates/sass/home.sass */
+        .home .schedule-events .central .events-indicator-container > div .event-description h3, .home .schedule-events .central .events-indicator-container > div .event-description p {
+          color: white;
+          margin: 0 auto;
+          text-align: center;
+          width: 256px; }
+        /* line 307, ../../Code/templates/sass/home.sass */
+        .home .schedule-events .central .events-indicator-container > div .event-description h3 {
+          font-size: 1.25em;
+          height: 17px;
+          line-height: 1em;
+          margin-bottom: 23px;
+          margin-top: 85px; }
+        /* line 314, ../../Code/templates/sass/home.sass */
+        .home .schedule-events .central .events-indicator-container > div .event-description p {
+          font-size: 0.63em;
+          line-height: 1.5em; }
+    /* line 323, ../../Code/templates/sass/home.sass */
+    .home .schedule-events .central .events-descriptions-container {
+      padding: 60px 0 0; }
+      /* line 325, ../../Code/templates/sass/home.sass */
+      .home .schedule-events .central .events-descriptions-container > div {
+        display: none;
+        margin: 0 auto;
+        width: 640px; }
+        /* line 329, ../../Code/templates/sass/home.sass */
+        .home .schedule-events .central .events-descriptions-container > div:first-child {
+          display: block; }
+        /* line 331, ../../Code/templates/sass/home.sass */
+        .home .schedule-events .central .events-descriptions-container > div h4, .home .schedule-events .central .events-descriptions-container > div p {
+          display: block;
+          margin: 0 auto;
+          text-align: center; }
+        /* line 335, ../../Code/templates/sass/home.sass */
+        .home .schedule-events .central .events-descriptions-container > div h4.title {
+          font-size: 0.94em;
+          line-height: 1em;
+          margin: 0 0 16px; }
+        /* line 339, ../../Code/templates/sass/home.sass */
+        .home .schedule-events .central .events-descriptions-container > div p {
+          font-size: 0.56em;
+          line-height: 1.5em; }
+/* line 345, ../../Code/templates/sass/home.sass */
+.home .form {
+  height: 585px; }
+  /* line 347, ../../Code/templates/sass/home.sass */
+  .home .form form {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 100%;
+    padding: 50px 0 0; }
+    /* line 351, ../../Code/templates/sass/home.sass */
+    .home .form form > legend, .home .form form p {
+      margin: 0;
+      padding: 0;
+      text-align: center; }
+    /* line 355, ../../Code/templates/sass/home.sass */
+    .home .form form > legend {
+      color: #d63234;
+      font-size: 1.75em;
+      line-height: 1em;
+      margin: 0 0 20px; }
+    /* line 361, ../../Code/templates/sass/home.sass */
+    .home .form form p {
+      color: #616161;
+      font-size: 0.88em;
+      line-height: 1em; }
+    /* line 365, ../../Code/templates/sass/home.sass */
+    .home .form form fieldset {
+      -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+              box-sizing: border-box;
+      float: left;
+      position: relative; }
+    /* line 369, ../../Code/templates/sass/home.sass */
+    .home .form form .left {
+      height: 370px;
+      margin: 105px 0 0;
+      padding: 0 52px 0 24px;
+      width: 352px; }
+      /* line 374, ../../Code/templates/sass/home.sass */
+      .home .form form .left h5 {
+        font-size: 0.94em;
+        line-height: 0.94em;
+        margin: 0 0 25px; }
+      /* line 378, ../../Code/templates/sass/home.sass */
+      .home .form form .left p {
+        clear: both;
+        display: block;
+        font-size: 0.69em;
+        line-height: 1em;
+        width: 100%; }
+    /* line 391, ../../Code/templates/sass/home.sass */
+    .home .form form .right {
+      margin: 65px 0 0;
+      width: 608px; }
+      /* line 394, ../../Code/templates/sass/home.sass */
+      .home .form form .right legend {
+        color: #d63234;
+        font-size: 0.88em;
+        line-height: 1em;
+        margin: 0 0 18px; }
+      /* line 399, ../../Code/templates/sass/home.sass */
+      .home .form form .right .input {
+        float: left; }
+        /* line 401, ../../Code/templates/sass/home.sass */
+        .home .form form .right .input input[type="text"], .home .form form .right .input textarea {
+          background-color: #e5e5e5;
+          border: 0 none transparent;
+          color: #616161;
+          font-size: 0.75em;
+          line-height: 2.92em;
+          width: 100%; }
+        /* line 408, ../../Code/templates/sass/home.sass */
+        .home .form form .right .input input[placeholder], .home .form form .right .input ::-moz-placeholder, .home .form form .right .input input:-moz-placeholder, .home .form form .right .input textarea[placeholder], .home .form form .right .input textarea:-moz-placeholder {
+          color: #616161;
+          font-size: 0.75em;
+          line-height: 2.92em;
+          text-indent: 10px;
+          text-overflow: ellipsis; }
+      /* line 414, ../../Code/templates/sass/home.sass */
+      .home .form form .right .text {
+        margin: 0 69px 22px 0;
+        width: 220px; }
+        /* line 417, ../../Code/templates/sass/home.sass */
+        .home .form form .right .text input[type="text"] {
+          height: 30px; }
+      /* line 419, ../../Code/templates/sass/home.sass */
+      .home .form form .right .textarea {
+        margin: 3px 0 20px;
+        width: 508px; }
+        /* line 422, ../../Code/templates/sass/home.sass */
+        .home .form form .right .textarea textarea {
+          height: 132px;
+          resize: none; }
+      /* line 425, ../../Code/templates/sass/home.sass */
+      .home .form form .right .submit {
+        clear: both;
+        display: block;
+        float: right;
+        margin: 0 99px 0 0; }
+        /* line 430, ../../Code/templates/sass/home.sass */
+        .home .form form .right .submit input[type="submit"] {
+          background-color: white;
+          border: 3px solid #f70017;
+          color: #616161;
+          display: inline-block;
+          font-size: 0.94em;
+          line-height: 2.67em;
+          height: 41px;
+          position: relative;
+          text-indent: 0;
+          width: 94px; }
+          /* line 441, ../../Code/templates/sass/home.sass */
+          .home .form form .right .submit input[type="submit"]:hover {
+            background-color: #fa0007;
+            color: white; }
+          /* line 444, ../../Code/templates/sass/home.sass */
+          .home .form form .right .submit input[type="submit"]:active {
+            background-color: #ac0003;
+            color: white; }
+/* line 447, ../../Code/templates/sass/home.sass */
 .home .site-map {
-  background-color: #1d1d1d; }
-  .home .site-map .central .site-map-links ul {
-    float: left; }
-    .home .site-map .central .site-map-links ul li {
-      list-style: none inside; }
+  background-color: #1d1d1d;
+  height: 212px; }
+  /* line 450, ../../Code/templates/sass/home.sass */
+  .home .site-map .central {
+    height: 100%;
+    position: relative; }
+    /* line 453, ../../Code/templates/sass/home.sass */
+    .home .site-map .central .logo-footer {
+      margin-left: 30px; }
+    /* line 456, ../../Code/templates/sass/home.sass */
+    .home .site-map .central ul, .home .site-map .central div {
+      clear: right;
+      float: right; }
+    /* line 459, ../../Code/templates/sass/home.sass */
+    .home .site-map .central .site-map-titles {
+      border-bottom: 2px solid #959595;
+      -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+              box-sizing: border-box;
+      clear: right;
+      float: right;
+      padding: 0 0 0 75px;
+      width: 480px; }
+      /* line 466, ../../Code/templates/sass/home.sass */
+      .home .site-map .central .site-map-titles li {
+        color: #2d730b;
+        float: left;
+        list-style: none inside; }
+    /* line 471, ../../Code/templates/sass/home.sass */
+    .home .site-map .central .site-map-links ul {
+      float: left; }
+      /* line 473, ../../Code/templates/sass/home.sass */
+      .home .site-map .central .site-map-links ul li {
+        color: #616161;
+        font-size: 0.63em;
+        line-height: 0.63em;
+        list-style: none inside;
+        margin: 5px 0; }
+/* line 479, ../../Code/templates/sass/home.sass */
 .home .social-footer-links {
-  background-color: #96cc42; }
-  .home .social-footer-links .central h6, .home .social-footer-links .central p {
-    color: white; }
-  .home .social-footer-links .central h6 {
-    font-size: 1.13em; }
-  .home .social-footer-links .central .logos-footer li {
-    list-style: none inside; }
-    .home .social-footer-links .central .logos-footer li a {
-      color: #616161; }
+  background-color: #96cc42;
+  height: 83px; }
+  /* line 482, ../../Code/templates/sass/home.sass */
+  .home .social-footer-links .central {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 100%;
+    padding: 12px 0 0;
+    position: relative; }
+    /* line 487, ../../Code/templates/sass/home.sass */
+    .home .social-footer-links .central h6, .home .social-footer-links .central p {
+      clear: left;
+      color: white;
+      display: inline-block;
+      float: left;
+      width: 395px; }
+    /* line 493, ../../Code/templates/sass/home.sass */
+    .home .social-footer-links .central h6 {
+      font-size: 1.38em;
+      line-height: 1em; }
+    /* line 496, ../../Code/templates/sass/home.sass */
+    .home .social-footer-links .central p {
+      font-size: 0.63em;
+      line-height: 1em;
+      margin: 5px 0 0; }
+    /* line 500, ../../Code/templates/sass/home.sass */
+    .home .social-footer-links .central .logos-footer {
+      right: 0; }
+      /* line 502, ../../Code/templates/sass/home.sass */
+      .home .social-footer-links .central .logos-footer li {
+        list-style: none inside; }
+        /* line 504, ../../Code/templates/sass/home.sass */
+        .home .social-footer-links .central .logos-footer li a {
+          color: #616161; }
+/* line 510, ../../Code/templates/sass/home.sass */
 .home .footer {
   background-color: #1d1d1d; }
+  /* line 513, ../../Code/templates/sass/home.sass */
   .home .footer footer p {
     color: #616161;
-    margin: 0; }
+    display: block;
+    font-size: 0.56em;
+    line-height: 3.56em;
+    margin: 0 auto;
+    text-align: center; }
 
 /* ==========================================================================
  * Helper classes
  * ========================================================================== */
 /* Image replacement
  */
+/* line 118, ../../Code/templates/sass/main.sass */
 .ir {
   background-color: transparent;
   border: 0;
@@ -885,6 +1383,7 @@ h1, h2, h3, h4, h5, h6 {
   /* IE 6/7 fallback */
   *text-indent: -9999px; }
 
+/* line 125, ../../Code/templates/sass/main.sass */
 .ir:before {
   content: "";
   display: block;
@@ -893,12 +1392,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Hide from both screenreaders and browsers: h5bp.com/u
  */
+/* line 135, ../../Code/templates/sass/main.sass */
 .hidden {
   display: none !important;
   visibility: hidden; }
 
 /* Hide only visually, but have it available for screenreaders: h5bp.com/v
  */
+/* line 143, ../../Code/templates/sass/main.sass */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -912,6 +1413,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
+/* line 158, ../../Code/templates/sass/main.sass */
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -923,6 +1425,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Hide visually and from screenreaders, but maintain layout
  */
+/* line 171, ../../Code/templates/sass/main.sass */
 .invisible {
   visibility: hidden; }
 
@@ -936,17 +1439,20 @@ h1, h2, h3, h4, h5, h6 {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
+/* line 187, ../../Code/templates/sass/main.sass */
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table; }
 
+/* line 192, ../../Code/templates/sass/main.sass */
 .clearfix:after {
   clear: both; }
 
 /* For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
+/* line 200, ../../Code/templates/sass/main.sass */
 .clearfix {
   *zoom: 1; }
 
@@ -964,6 +1470,7 @@ h1, h2, h3, h4, h5, h6 {
  * Inlined to avoid required HTTP connection: h5bp.com/r
  * ========================================================================== */
 @media print {
+  /* line 223, ../../Code/templates/sass/main.sass */
   * {
     background: transparent !important;
     color: black !important;
@@ -971,46 +1478,56 @@ h1, h2, h3, h4, h5, h6 {
             box-shadow: none !important;
     text-shadow: none !important; }
 
+  /* line 229, ../../Code/templates/sass/main.sass */
   a,
   a:visited {
     text-decoration: underline; }
 
+  /* line 233, ../../Code/templates/sass/main.sass */
   a[href]:after {
     content: " (" attr(href) ")"; }
 
+  /* line 236, ../../Code/templates/sass/main.sass */
   abbr[title]:after {
     content: " (" attr(title) ")"; }
 
   /* Don't show links for images, or javascript/internal links
    */
+  /* line 243, ../../Code/templates/sass/main.sass */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: ""; }
 
+  /* line 248, ../../Code/templates/sass/main.sass */
   pre,
   blockquote {
     border: 1px solid #999999;
     page-break-inside: avoid; }
 
+  /* line 253, ../../Code/templates/sass/main.sass */
   thead {
     display: table-header-group; }
 
+  /* line 256, ../../Code/templates/sass/main.sass */
   tr,
   img {
     page-break-inside: avoid; }
 
+  /* line 260, ../../Code/templates/sass/main.sass */
   img {
     max-width: 100% !important; }
 
   @page {
     margin: 0.5cm; }
+  /* line 267, ../../Code/templates/sass/main.sass */
   p,
   h2,
   h3 {
     orphans: 3;
     widows: 3; }
 
+  /* line 273, ../../Code/templates/sass/main.sass */
   h2,
   h3 {
     page-break-after: avoid; } }

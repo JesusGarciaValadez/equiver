@@ -3569,7 +3569,7 @@
 		},
 	"\/Code\/templates\/sass\/_colors.sass": {
 		"createSourceMap": 1,
-		"debugStyle": 0,
+		"debugStyle": 1,
 		"decimalPrecision": 2,
 		"fileType": 2,
 		"ignore": 1,
@@ -3585,7 +3585,7 @@
 		},
 	"\/Code\/templates\/sass\/_normalize.sass": {
 		"createSourceMap": 1,
-		"debugStyle": 0,
+		"debugStyle": 1,
 		"decimalPrecision": 2,
 		"fileType": 2,
 		"ignore": 1,
@@ -3601,7 +3601,7 @@
 		},
 	"\/Code\/templates\/sass\/_sprite.scss": {
 		"createSourceMap": 1,
-		"debugStyle": 0,
+		"debugStyle": 1,
 		"decimalPrecision": 2,
 		"fileType": 4,
 		"ignore": 1,
@@ -3617,7 +3617,7 @@
 		},
 	"\/Code\/templates\/sass\/_typographys.sass": {
 		"createSourceMap": 1,
-		"debugStyle": 0,
+		"debugStyle": 1,
 		"decimalPrecision": 2,
 		"fileType": 2,
 		"ignore": 1,
@@ -3633,7 +3633,7 @@
 		},
 	"\/Code\/templates\/sass\/_variables.sass": {
 		"createSourceMap": 1,
-		"debugStyle": 0,
+		"debugStyle": 1,
 		"decimalPrecision": 2,
 		"fileType": 2,
 		"ignore": 1,
@@ -3649,7 +3649,7 @@
 		},
 	"\/Code\/templates\/sass\/home.sass": {
 		"createSourceMap": 1,
-		"debugStyle": 0,
+		"debugStyle": 1,
 		"decimalPrecision": 2,
 		"fileType": 2,
 		"ignore": 1,
@@ -3665,7 +3665,7 @@
 		},
 	"\/Code\/templates\/sass\/main.sass": {
 		"createSourceMap": 1,
-		"debugStyle": 0,
+		"debugStyle": 1,
 		"decimalPrecision": 2,
 		"fileType": 2,
 		"ignore": 0,
@@ -6630,7 +6630,7 @@
 	"sassAutoOutputPathReplace2": "css",
 	"sassAutoOutputPathStyle": 1,
 	"sassCreateSourceMap": 1,
-	"sassDebugStyle": 0,
+	"sassDebugStyle": 1,
 	"sassDecimalPrecision": 2,
 	"sassOutputStyle": 3,
 	"sassUseLibsass": 0,

@@ -13,13 +13,18 @@
             display: block
             margin: 0 auto
             width: 960px
-.logo
+.logo, .logo-footer
     display: inline-block
     height: auto
-    margin: -35px 0 0
     position: absolute
     top: 50%
     width: auto
+    img
+.logo
+    margin: -35px 0 0
+    img
+.logo-footer
+    margin: -53.5px 0 0
     img
 .logos-small, .logos-big, .logos-footer
     display: inline-block
@@ -46,10 +51,16 @@
         .twitter
             @extend .btn_twitter
 .logos-big
+    margin: 25px 0 0
+    position: static
     li
-        margin: 0 12px
+        margin: 0 7px
+        &:first-child
+            margin: 0 7px 0 0
         &:last-child
-            margin: 0 24px 0 12px
+            margin: 0 0 0 7px
+        a
+            float: left
         .facebook
             @extend .facebook_contacto
         .google
@@ -59,8 +70,9 @@
         .twitter
             @extend .twitter_contacto
 .logos-footer
+    margin: ( -31px / 2 ) 0 0 
     li
-        margin: 0 12px
+        margin: 0
         &:last-child
             margin: 0 24px 0 12px
         .facebook
@@ -193,44 +205,115 @@ h1, h2, h3, h4, h5, h6
                         @extend .slide_control_current
     .modulos-mas-title
         background-color:  $header-background-color
-        height: 140px
+        height: 145px
         position: relative
         .central
             height: 100%
             position: relative
             a
             .logo
+                margin-left: 45px
                 img
             h1
                 color: $text-normal
-                display: inline-block;
-                margin: -12px 0 0;
-                position: absolute;
-                right: 0;
-                top: 50%;
+                display: inline-block
+                font-size: em( 33, 16 )
+                line-height: em( 33, 33 )
+                margin: (-33px/2) 0 0
+                position: absolute
+                right: 0
+                top: 50%
                 strong
 
     .modulos-mas-content
+        height: 522px
         .central
+            padding: 96px 0 0
+            position: relative
+            h2,p,ul
+                clear: left
+                display: inline-block
+                float: left
+                width: 305px
+            h2, p
+                text-align: center
+            p, ul li p
+                color: $text-normal
+                font-size: em( 10, 16 )
+                line-height: em( 10, 10 )
             h2
+                color: $titles
+                font-size: em( 15.7, 16 )
+                line-height: em( 16, 15.7 )
+                margin: 0 0 0 47px
             p
+                margin: 10px 0 0 47px  
             ul
+                box-sizing: border-box
+                margin: 49px 0 0
+                padding: 0 0 0 175px
                 li
+                    height: 55px
+                    margin: 28px 0
+                    &:first-child
+                        margin: 0 0 28px
+                    &:last-child
+                        margin: 28px 0 0
+                    p
+                        line-height: em( 66, 16 )
+                        width: 100%
                 .people
+                    list-style: url("../../assets/img/home/icono1_modulo.png") outside
                 .instrument
+                    list-style: url("../../assets/img/home/icono2_modulo.png") outside
                 .heart
+                    list-style: url("../../assets/img/home/icono3_modulo.png") outside
             img
     .schedule-events
         background-color:  $header-background-color
+        height: 590px
         .central
-            h2.title
+            padding: 65px 0 0
+            h2
+                font-size: em( 31, 16 )
+                height: 23px
+                line-height: em( 30, 31 )
+                margin: 0 0 78px
+                text-align: center
                 strong
             .events-indicator-container
                 > div
+                    float: left
+                    height: 225px
+                    overflow: hidden
+                    position: relative
+                    width: 320px
+                    &:hover
+                        .event-description
+                            display: inline-block
                     .event-description
+                        background-color: rgba( 0, 0, 0, 0.5 )
+                        display: none
+                        height: 100%
+                        left: 0
+                        position: absolute
+                        top: 0
+                        width: 100%
+                        h3, p
+                            color: $white-color
+                            margin: 0 auto
+                            text-align: center
+                            width: 256px
                         h3
+                            font-size: em( 20, 16 )
+                            height: 17px
+                            line-height: em( 20, 20 )
+                            margin-bottom: 23px
+                            margin-top: 85px
                             strong
                         p
+                            font-size: em( 10, 16 )
+                            line-height: em( 15, 10 )
                 .event-1
                     img
                 .event-2
@@ -238,18 +321,66 @@ h1, h2, h3, h4, h5, h6
                 .event-3
                     img
             .events-descriptions-container
+                padding: 60px 0 0
                 > div 
+                    display: none
+                    margin: 0 auto
+                    width: 640px
+                    &:first-child
+                        display: block
+                    h4, p
+                        display: block
+                        margin: 0 auto
+                        text-align: center
                     h4.title
+                        font-size: em( 15, 16 )
+                        line-height: em( 15, 15 )
+                        margin: 0 0 16px
                     p
+                        font-size: em( 9, 16 )
+                        line-height: em( ( 9 * 1.5 ), 9 )
                 .event-1
                 .event-2
                 .event-3
     .form
+        height: 585px
         form
+            box-sizing: border-box
+            height: 100%
+            padding: 50px 0 0
+            > legend, p
+                margin: 0
+                padding: 0
+                text-align: center
+            > legend
+                color: $titles
+                font-size: em( 28, 16 )
+                line-height: em( 28, 28 )
+                margin: 0 0 20px
+                strong
+            p
+                color: $text-normal
+                font-size: em( 14, 16 )
+                line-height: em( 14, 14 )
             fieldset
+                box-sizing: border-box
+                float: left
+                position: relative
             .left
+                height: 370px
+                margin: 105px 0 0
+                padding: 0 52px 0 24px
+                width: 352px
                 h5
+                    font-size: em( 15, 16 )
+                    line-height: em( 15, 16 )
+                    margin: 0 0 25px
                 p
+                    clear: both
+                    display: block
+                    font-size: em( 11, 16 )
+                    line-height: em( 11, 11 )
+                    width: 100%
                 .logos-big
                     li
                         a
@@ -258,37 +389,116 @@ h1, h2, h3, h4, h5, h6
                         .youtube
                         .google
             .right
+                margin: 65px 0 0
+                width: 608px
                 legend
+                    color: $titles
+                    font-size: em( 14, 16 )
+                    line-height: em( 14, 14 )
+                    margin: 0 0 18px
                 .input
+                    float: left
                     input[type="text"], textarea
                         background-color:  $input-background
+                        border: 0 none transparent
+                        color: $text-normal
+                        font-size: em( 12, 16 )
+                        line-height: em( 35, 12 )
+                        width: 100%
+                    input[placeholder], ::-moz-placeholder, input:-moz-placeholder, textarea[placeholder], textarea:-moz-placeholder
+                        color: $text-normal
+                        font-size: em( 12, 16 )
+                        line-height: em( 35, 12 )
+                        text-indent: 10px
+                        text-overflow: ellipsis
                 .text
+                    margin: 0 69px 22px 0
+                    width: 220px
                     input[type="text"]
+                        height: 30px
                 .textarea
+                    margin: 3px 0 20px
+                    width: 508px
                     textarea
+                        height: 132px
+                        resize: none
                 .submit
+                    clear: both
+                    display: block
+                    float: right
+                    margin: 0 99px 0 0
                     input[type="submit"]
+                        background-color: $white-color
+                        border: 3px solid $submit-border
+                        color: $text-normal
+                        display: inline-block
+                        font-size: em( 15, 16 )
+                        line-height: em( 40, 15 )
+                        height: 41px
+                        position: relative
+                        text-indent: 0
+                        width: 94px
+                        &:hover
+                            background-color: $submit-background-hover
+                            color: $white-color
+                        &:active
+                            background-color: $submit-background-active
+                            color: $white-color
     .site-map
         background-color:  $footer-background-links
+        height: 212px
         .central
-            .logo
+            height: 100%
+            position: relative
+            .logo-footer
+                margin-left: 30px
                 img
+            ul, div
+                clear: right
+                float: right
             .site-map-titles
+                border-bottom: 2px solid $horizontal-rule
+                box-sizing: border-box
+                clear: right
+                float: right
+                padding: 0 0 0 75px
+                width: 480px
                 li
+                    color: $text-active
+                    float: left
+                    list-style: none inside
             .site-map-links
                 ul
                     float: left
                     li
+                        color: $text-normal
+                        font-size: em( 10, 16 )
+                        line-height: em( 10, 16 )
                         list-style: none inside
+                        margin: 5px 0
     .social-footer-links
         background-color: $footer-background-social
+        height: 83px
         .central
+            box-sizing: border-box
+            height: 100%
+            padding:  12px 0 0
+            position: relative
             h6, p
+                clear: left
                 color: $white-color
+                display: inline-block
+                float: left
+                width: 395px
             h6
-                font-size: em( 18, 16 )
+                font-size: em( 22, 16 )
+                line-height: em( 22, 22 )
             p
+                font-size: em( 10, 16 )
+                line-height: em( 10, 10 )
+                margin: 5px 0 0
             .logos-footer
+                right: 0
                 li
                     list-style: none inside
                     a
@@ -302,4 +512,8 @@ h1, h2, h3, h4, h5, h6
         footer
             p
                 color: $text-normal
-                margin: 0
+                display: block
+                font-size: em( 9, 16 )
+                line-height: em( 32, 9 )
+                margin: 0 auto
+                text-align: center
