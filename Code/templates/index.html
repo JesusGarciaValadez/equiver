@@ -52,9 +52,9 @@
             </div><!-- Header-->
             <div class="wide main">
                 <main class="central profile-selector">
-                    <a href="#" title="Perfil de Paciente" target="_self" class="pacient">Paciente</a>
-                    <a href="#" title="Perfil de Médico" target="_self" class="doctor">Médico</a>
-                    <span>Elige tu perfil</span>
+                    <a href="#" title="Perfil de Paciente" target="_self" class="pacient"></a>
+                    <a href="#" title="Perfil de Médico" target="_self" class="doctor"></a>
+                    <span></span>
                 </main>
             </div><!-- Seleccionar Perfil -->
             <div class="wide nav">
@@ -78,22 +78,43 @@
                     </ul>
                     <ul class="sections-menu clearfix">
                         <li>
-                            <a href="[[~1]]" title="[[*menutitle]]">[[*pagetitle]]</a>
+                            <a href="[[~1]]" title="[[*menutitle]]" target="_self">[[*pagetitle]]</a>
+                        </li>
+                        <li>
+                            <a href="[[~1]]" title="Qué es Módulos Mas" target="_self">Qué es Módulos Mas</a>
+                        </li>
+                        <li>
+                            <a href="[[~1]]" title="Eventos" target="_self">Eventos</a>
+                        </li>
+                        <li>
+                            <a href="[[~1]]" title="Contáctanos" target="_self">Contáctanos</a>
                         </li>
                     </ul>
                 </nav>
             </div><!-- Menu de secciones -->
             <div class="wide div-scrollable">
                 <div class="central scrollable">
-                    <a href="#" class="browser prev" title="Anterior">Anterior</a>
+                    <a class="browser prev" title="Anterior">Anterior</a>
                     <div class="items">
+                        <div>
+                            <img src="[[*site_url]]assets/img/home/imgn_slide1.jpg" alt="Imagen de refresco y bolsa de hamburguesa" width="489" height="538" />
+                            <img src="[[*site_url]]assets/img/home/copy_slide1.png" alt="Deja la comida chatarra y comer saludable. Hoy es el mejor día." width="472" height="275" />
+                        </div>
+                        <div>
+                            <img src="[[*site_url]]assets/img/home/imgn_slide1.jpg" alt="Imagen de refresco y bolsa de hamburguesa" width="489" height="538" />
+                            <img src="[[*site_url]]assets/img/home/copy_slide1.png" alt="Deja la comida chatarra y comer saludable. Hoy es el mejor día." width="472" height="275" />
+                        </div>
+                        <div>
+                            <img src="[[*site_url]]assets/img/home/imgn_slide1.jpg" alt="Imagen de refresco y bolsa de hamburguesa" width="489" height="538" />
+                            <img src="[[*site_url]]assets/img/home/copy_slide1.png" alt="Deja la comida chatarra y comer saludable. Hoy es el mejor día." width="472" height="275" />
+                        </div>
                         <div>
                             <img src="[[*site_url]]assets/img/home/imgn_slide1.jpg" alt="Imagen de refresco y bolsa de hamburguesa" width="489" height="538" />
                             <img src="[[*site_url]]assets/img/home/copy_slide1.png" alt="Deja la comida chatarra y comer saludable. Hoy es el mejor día." width="472" height="275" />
                         </div>
                     </div>
                     <div class="navigator"></div>
-                    <a href="#" class="browser next" title="Siguiente">Siguiente</a>
+                    <a class="browser next" title="Siguiente">Siguiente</a>
                 </div>
             </div><!-- Scrollable -->
             <div class="wide modulos-mas-title">
@@ -189,22 +210,22 @@
                     <fieldset class="right">
                         <legend>Morbi Accumsan</legend>
                         <div class="input text">
-                            <input type="text" name="first-name" placeholder="Nombre*" />
+                            <input type="text" name="first-name" placeholder="Nombre*" required pattern="\w{2,}" />
                         </div>
                         <div class="input text">
-                            <input type="text" name="last-name" placeholder="Apellido*" />
+                            <input type="text" name="last-name" placeholder="Apellido*" required pattern="\w{2,}" />  
                         </div>
                         <div class="input text">
-                            <input type="text" name="email" placeholder="Correo Electrónico*" />
+                            <input type="email" name="email" placeholder="Correo Electrónico*" required />
                         </div>
                         <div class="input text">
-                            <input type="text" name="telephone" placeholder="Teléfono*" />
+                            <input type="tel" name="telephone" placeholder="Teléfono*" required pattern="\d{3,13}" />
                         </div>
                         <div class="input textarea">
-                            <textarea name="message" placeholder="Mensaje*"></textarea>
+                            <textarea name="message" placeholder="Mensaje*" required pattern="(\w)+|(\d)*" ></textarea>
                         </div>
                         <div class="input submit">
-                            <input type="submit" name="submit-button" placeholder="Enviar"  value="Enviar"/>
+                            <input type="submit" name="submit-button" placeholder="Enviar" value="Enviar"/>
                         </div>
                     </fieldset>
                 </form>
@@ -286,8 +307,8 @@
                 </footer>
             </div><!-- Footer -->
         </div><!-- Home -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
         <script src="assets/js/main.min.js"></script>
         
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

@@ -85,13 +85,46 @@
             @extend .btn_twitter_footer
 .profile-selector
     a
+        left: 50%
+        position: absolute
         text-indent: -2000em
+        z-index: 0
+        &:after
+            background-color: $profile-name-background
+            border-bottom: 7px solid $profile-name
+            box-sizing: border-box
+            color: $profile-name
+            cursor: pointer
+            display: none
+            font-size: em( 30, 16 )
+            line-height: em( 140, 30 )
+            height: 135px
+            position: absolute
+            top: 54%
+            width: 100%
+            z-index: 5
+        &:nth-child( 1n ):after
+            content: "Paciente"
+            left: 0
+            text-align: right
+            padding: 0 em( 57, 30 ) 0 0
+        &:nth-child( 2n ):after
+            content: "Médico"
+            right: 0
+            text-align: left
+            text-indent: em( 57, 30 )
+            padding: 0
+        &:hover
+            &:after
+                display: inline-block
     .pacient
         @extend .paciente_intro_BN
+        margin: 0 0 0 -577px
         &:hover
             @extend .paciente_intro
     .doctor
         @extend .doctora_intro_BN
+        margin: 0
         &:hover
             @extend .doctora_intro
     span
@@ -117,13 +150,40 @@ h1, h2, h3, h4, h5, h6
                 line-height: em( 76, 16 )
     .main
         height: 604px
+        overflow: hidden
+        position: relative
         main
             height: 100%
+            position: relative
             a
                 display: inline-block
                 float: left
-                height: 100%
-                width: 50%
+            span
+                border-bottom: 1px dotted $choose-profile-border
+                color: $choose-profile-color
+                display: inline-block
+                font-size: em( 20, 16 )
+                left: 50%
+                line-height: em( 20, 20 )
+                margin: 0 0 0 -100px
+                padding: 0
+                position: absolute
+                text-align: center
+                top: 53.6%
+                width: 200px
+                z-index: 5
+                &:after
+                    clear: both
+                    content: "Elige tu perfil"
+                    left: 50%
+                    margin: 0 0 0 -50px
+                    position: absolute
+                    top: -30px
+                &:before
+                    @extend .icono_mano_EligePerfil
+                    content: ""
+                    position: absolute
+                    top: 10px
     .nav
         box-shadow: 0 18px 15px -10px #DFDFDF
         height: 78px
@@ -147,7 +207,11 @@ h1, h2, h3, h4, h5, h6
                         margin: 0 35px 0 17.5px
                     a
                         color: $text-normal
-                        line-height: em( 30, 16 )
+                        font-size: em( 13, 16 )
+                        line-height: em( 33, 13 )
+                        &:hover
+                            color: $text-active
+                            text-decoration: none
     .div-scrollable
         height: 593px
         .scrollable
@@ -172,7 +236,7 @@ h1, h2, h3, h4, h5, h6
                 &:hover
                     @extend .flecha_der_i
             .disabled
-                display: none
+                display: none !important
             .items
                 height: 100%
                 position: relative
@@ -196,12 +260,20 @@ h1, h2, h3, h4, h5, h6
                             right: 0
             .navigator
                 bottom: 47px
+                display: inline-block
                 height: 12px
+                left: 50%
                 margin: 0 auto
                 position: relative
                 a
                     @extend .slide_control_normal
-                    &:hover, .current
+                    float: left
+                    margin: 0 5px
+                    &:first-child
+                        margin: 0 5px 0 0
+                    &:last-child
+                        margin: 0 0 0 5px
+                    &:hover, &.active
                         @extend .slide_control_current
     .modulos-mas-title
         background-color:  $header-background-color
@@ -398,7 +470,7 @@ h1, h2, h3, h4, h5, h6
                     margin: 0 0 18px
                 .input
                     float: left
-                    input[type="text"], textarea
+                    input[type="text"],input[type="tel"],input[type="email"],textarea
                         background-color:  $input-background
                         border: 0 none transparent
                         color: $text-normal
@@ -461,21 +533,42 @@ h1, h2, h3, h4, h5, h6
                 box-sizing: border-box
                 clear: right
                 float: right
-                padding: 0 0 0 75px
+                margin: 50px 0 0
+                padding: 0 0 9px 75px
                 width: 480px
                 li
                     color: $text-active
                     float: left
                     list-style: none inside
+                    margin: 0 8px
+                    &:first-child
+                        margin: 0 7px 0 0
+                    &:last-child
+                        margin: 0 0 0 7px
             .site-map-links
+                width: 405px
                 ul
+                    box-sizing: border-box
                     float: left
+                    margin: 13px 0 0
+                    padding: 0
+                    &:nth-child( 1n )
+                        width: 16%
+                    &:nth-child( 2n )
+                        width: 24%
+                    &:nth-child( 3n )
+                        width: 25%
+                    &:nth-child( 4n )
+                        width: 21%
+                    &:nth-child( 5n )
+                        width: 13%
                     li
                         color: $text-normal
                         font-size: em( 10, 16 )
                         line-height: em( 10, 16 )
                         list-style: none inside
-                        margin: 5px 0
+                        margin: 0 0 5px
+                        text-transform: lowercase
     .social-footer-links
         background-color: $footer-background-social
         height: 83px
