@@ -85,6 +85,7 @@
             @extend .btn_twitter_footer
 .profile-selector
     a
+        bottom: 0
         left: 50%
         position: absolute
         text-indent: -2000em
@@ -100,7 +101,8 @@
             line-height: em( 140, 30 )
             height: 135px
             position: absolute
-            top: 54%
+            //top: 54%
+            top: 68.4%
             width: 100%
             z-index: 5
         &:nth-child( 1n ):after
@@ -120,13 +122,25 @@
     .pacient
         @extend .paciente_intro_BN
         margin: 0 0 0 -577px
+        &:after
+            left: -577px
+            transition: left 5s
         &:hover
             @extend .paciente_intro
+            &:after
+                left: 0
+                transition: left 5s
     .doctor
         @extend .doctora_intro_BN
         margin: 0
+        &:after
+            right: -577px
+            transition: right 5s
         &:hover
             @extend .doctora_intro
+            &:after
+                right: 0
+                transition: right 5s
     span
 h1, h2, h3, h4, h5, h6
     font-weight:  normal
@@ -182,6 +196,8 @@ h1, h2, h3, h4, h5, h6
                 &:before
                     @extend .icono_mano_EligePerfil
                     content: ""
+                    left: 50%
+                    margin: 0 0 0 -11.5px
                     position: absolute
                     top: 10px
     .nav
