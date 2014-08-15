@@ -1,5 +1,5 @@
 // Avoid `console` errors in browsers that lack a console.
-(function() {
+( function() {
     var method;
     var noop = function () {};
     var methods = [
@@ -19,7 +19,7 @@
             console[method] = noop;
         }
     }
-}());
+} ( ) );
 
 String.prototype.capitalize = function () {
     return this.charAt( 0 ).toUpperCase() + this.slice( 1 );
@@ -68,4 +68,6 @@ jQuery.fn.centerHeight      = function(){
 // Place any jQuery/helper plugins in here.
 // @codekit-append "vendor/jquery.tools.custom.min.js";
 // @codekit-append "vendor/jquery.scrollTo-1.4.3.1.js";
+// @codekit-append "vendor/underscore.js";
+// @codekit-append "vendor/backbone.js";
 // @codekit-append "Equiver.js";

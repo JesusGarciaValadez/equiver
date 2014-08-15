@@ -176,22 +176,26 @@ h1, h2, h3, h4, h5, h6
                 border-bottom: 1px dotted $choose-profile-border
                 color: $choose-profile-color
                 display: inline-block
-                font-size: em( 20, 16 )
+                height: 1px
                 left: 50%
-                line-height: em( 20, 20 )
+                line-height: 0
                 margin: 0 0 0 -100px
                 padding: 0
                 position: absolute
                 text-align: center
+                text-indent: -2000em
                 top: 53.6%
                 width: 200px
                 z-index: 5
                 &:after
                     clear: both
                     content: "Elige tu perfil"
+                    font-size: em( 20, 16 )
                     left: 50%
+                    line-height: em( 20, 16 )
                     margin: 0 0 0 -50px
                     position: absolute
+                    text-indent: 0
                     top: -30px
                 &:before
                     @extend .icono_mano_EligePerfil
@@ -525,6 +529,7 @@ h1, h2, h3, h4, h5, h6
                         height: 41px
                         position: relative
                         text-indent: 0
+                        -webkit-appearance: button
                         width: 94px
                         &:hover
                             background-color: $submit-background-hover

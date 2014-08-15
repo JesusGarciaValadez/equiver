@@ -26,7 +26,7 @@
                 <main class="central profile-selector">
                     <a href="#" title="Perfil de Paciente" target="_self" class="pacient">Paciente</a>
                     <a href="#" title="Perfil de Médico" target="_self" class="doctor">Médico</a>
-                    <span></span>
+                    <span>Elige tu perfil</span>
                 </main>
             </div><!-- Seleccionar Perfil -->
             <div class="wide nav">
@@ -50,16 +50,16 @@
                     </ul>
                     <ul class="sections-menu clearfix">
                         <li>
-                            <a href="[[~1]]" title="[[*menutitle]]" target="_self">[[*pagetitle]]</a>
+                            <a href="[[~1]]" title="[[*menutitle]]" target="_self" data-link=".home">[[*pagetitle]]</a>
                         </li>
                         <li>
-                            <a href="[[~1]]" title="Qué es Módulos Mas" target="_self">Qué es Módulos Mas</a>
+                            <a href="[[~1]]" title="Qué es Módulos Mas" target="_self" data-link=".modulos-mas-title">Qué es Módulos Mas</a>
                         </li>
                         <li>
-                            <a href="[[~1]]" title="Eventos" target="_self">Eventos</a>
+                            <a href="[[~1]]" title="Eventos" target="_self" data-link=".schedule-events">Eventos</a>
                         </li>
                         <li>
-                            <a href="[[~1]]" title="Contáctanos" target="_self">Contáctanos</a>
+                            <a href="[[~1]]" title="Contáctanos" target="_self" data-link=".form">Contáctanos</a>
                         </li>
                     </ul>
                 </nav>
@@ -278,5 +278,6 @@
                     <p>&copy; Copyright Equiver</p>
                 </footer>
             </div><!-- Footer -->
+            <div class="alert"></div><!-- Alert -->
         </div><!-- Home -->
 <!--@import html_end-->
