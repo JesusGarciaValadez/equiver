@@ -61,6 +61,24 @@
         // Asignación de tag de destino para realizar un scroll a la sección 
         // correspondiente cuando se haga click en el menu de navegación
         if ( $( '.sections-menu' ).exists() ) {
+
+
+            if ( $( '.home main' ).exists() ) {
+                $( '.home main a' ).first().on( 'click', function ( e ) {
+                    e.stopPropagation();
+                    e.preventDefault();
+
+                    var domDestiny  = $( e.currentTarget ).data( 'link' );
+                    domDestiny      = $( domDestiny ).offset().top;
+                    Equiver.smoothScroll ( domDestiny, 500 );
+                } );
+            }
+
+            //  Ancla el menú si bajamos mas allá de la posición normal del menú
+            $( window ).on( 'scroll', function ( e ) {
+                Equiver.anchorMenu ( $( '.nav' ), 680, "anchored", "unanchored" );
+            } );
+
             var domDestiny  = "";
             $( '.sections-menu li a' ).map( function ( index, domElement ) {
                 
@@ -69,6 +87,7 @@
                     e.preventDefault();
 
                     domDestiny  = $( domElement ).data( 'link' );
+                    domDestiny  = ( index === 0 ) ? $( domDestiny ).offset().top : domDestiny  = $( domDestiny ).offset().top - 78;
                     Equiver.smoothScroll ( domDestiny, 500 );
                 } );
             } );

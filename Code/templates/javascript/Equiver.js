@@ -28,6 +28,7 @@
     Equiver.overlay;
     Equiver.closer;
     Equiver.radio;
+    Equiver.tool;
 
     //  Object prototyping
     Equiver.fn = Equiver.prototype = {
@@ -150,18 +151,18 @@
          *
          */
         //  !Ancla el menú cuando a una altura determinada mediante css
-        anchorMenu:             function ( selectorToApply, offsetTop, cssToFix, cssToDeFix ) {
+        anchorMenu:             function ( selectorToApply, offsetTop, classToFix, classToDeFix ) {
             Equiver.tool = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
             var _selector       = ( typeof( selectorToApply ) === "undefined" ) ? "*" : selectorToApply;
             _selector       = ( typeof( _selector ) === "object" ) ? _selector : $( _selector );
             var _offsetTop      = ( offsetTop === "" ) ? 0 : offsetTop;
             _offsetTop      = ( typeof( _offsetTop ) === "string" ) ? parseInt( _offsetTop ) : ( typeof( _offsetTop ) === "number" ) ? _offsetTop : parseInt( _offsetTop );
-            var _cssToFix     = ( typeof( cssToFix ) === "object" ) ? cssToFix : {};
-            var _cssToDeFix   = ( typeof( cssToDeFix ) === "object" ) ? cssToDeFix : {};
+            var _classToFix     = ( typeof( classToFix ) === "object" ) ? classToFix : "anchored";
+            var _classToDeFix   = ( typeof( classToDeFix ) === "object" ) ? classToDeFix : "unanchored";
             if ( Equiver.tool >= _offsetTop ) {
-                _selector.css( _cssToFix );
+                _selector.removeClass( _classToDeFix ).addClass( _classToFix );
             } else {
-                _selector.css( _cssToDeFix );
+                _selector.removeClass( _classToFix ).addClass( _classToDeFix );
             }
         },
         /**

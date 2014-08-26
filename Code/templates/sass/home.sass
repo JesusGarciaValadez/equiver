@@ -1,3 +1,5 @@
+html, body
+    overflow: hidden
 .wrapper
     font: normal 16px/24px Helvetica, Arial, "sans-serif"
     a
@@ -147,6 +149,12 @@ h1, h2, h3, h4, h5, h6
     margin: 0
 .title
     color: $titles
+.anchored
+    left: 0
+    position: fixed
+    top: 0
+.unanchored
+    position: static
 .home
     .header
         background-color: $header-background-color
@@ -205,8 +213,10 @@ h1, h2, h3, h4, h5, h6
                     position: absolute
                     top: 10px
     .nav
+        background-color: $header-background-color
         box-shadow: 0 18px 15px -10px #DFDFDF
         height: 78px
+        z-index: 5
         nav
             height: 100%
             position: relative
@@ -592,7 +602,8 @@ h1, h2, h3, h4, h5, h6
                         text-transform: lowercase
     .social-footer-links
         background-color: $footer-background-social
-        height: 83px
+        height: 212px
+        //height: 83px
         .central
             box-sizing: border-box
             height: 100%
@@ -611,6 +622,8 @@ h1, h2, h3, h4, h5, h6
                 font-size: em( 10, 16 )
                 line-height: em( 10, 10 )
                 margin: 5px 0 0
+            .logo-footer
+                margin-left: 30px
             .logos-footer
                 right: 0
                 li
