@@ -78,6 +78,15 @@
             }
 
             var domDestiny  = "";
+            $( 'nav .logo' ).on( 'click', function ( e ) {
+                e.stopPropagation();
+                e.preventDefault();
+
+                domDestiny  = $( e.currentTarget ).data( 'link' );
+                domDestiny  = $( domDestiny ).offset().top;
+                Equiver.smoothScroll ( domDestiny, 500 );
+            } );
+
             $( '.sections-menu li a' ).map( function ( index, domElement ) {
                 
                 $( domElement ).on( 'click', function ( e ) {
@@ -85,7 +94,8 @@
                     e.preventDefault();
 
                     domDestiny  = $( domElement ).data( 'link' );
-                    domDestiny  = ( index === 0 ) ? $( domDestiny ).offset().top : domDestiny  = $( domDestiny ).offset().top - navHeight;
+                    console.log( $( domDestiny ).offset().top - 1 );
+                    domDestiny  = ( index === 0 ) ? $( domDestiny ).offset().top - 1 : domDestiny  = $( domDestiny ).offset().top - navHeight;
                     Equiver.smoothScroll ( domDestiny, 500 );
                 } );
             } );
