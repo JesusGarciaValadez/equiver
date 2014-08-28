@@ -26,13 +26,7 @@
     //  When DOM is loaded
     $( function ( ) {
 
-        window.navigator.userAgent = userAgent    = ( window.navigator.userAgent );
-        //( deviceWidth >= minDeviceWidth && deviceWidth <= maxDeviceWidth ) ? isPortable  = true : isPortable  = false;
-        ( userAgent.indexOf( 'iPhone ' ) || userAgent.indexOf( 'Android' ) ) ? isPortable  = true : isPortable  = false;
-
-        window.typeOfDevice = typeOfDevice  = ( isPortable ) ? "mobile" : "desktop";
-
-        window.isPortable   = isPortable;
+        Equiver.init();
 
         if ( isPortable ) { //  Si es un móvil...
 
@@ -58,11 +52,20 @@
     //  When page is finished loaded
     $( 'document' ).ready( function ( e ) {
 
+        //  Ancla el menú si bajamos mas allá de la posición normal del menú
+        if ( Equiver.tool > 680 ) {
+            Equiver.anchorMenu ( $( '.nav' ), 680, "anchored", "unanchored" );
+        }
+        
+        $( window ).on( 'scroll', function ( e ) {
+            Equiver.anchorMenu ( $( '.nav' ), 680, "anchored", "unanchored" );
+        } );
+
         // Asignación de tag de destino para realizar un scroll a la sección 
         // correspondiente cuando se haga click en el menu de navegación
         if ( $( '.sections-menu' ).exists() ) {
 
-
+            var navHeight   = $( '.nav' ).height();
             if ( $( '.home main' ).exists() ) {
                 $( '.home main a' ).first().on( 'click', function ( e ) {
                     e.stopPropagation();
@@ -74,11 +77,6 @@
                 } );
             }
 
-            //  Ancla el menú si bajamos mas allá de la posición normal del menú
-            $( window ).on( 'scroll', function ( e ) {
-                Equiver.anchorMenu ( $( '.nav' ), 680, "anchored", "unanchored" );
-            } );
-
             var domDestiny  = "";
             $( '.sections-menu li a' ).map( function ( index, domElement ) {
                 
@@ -87,7 +85,7 @@
                     e.preventDefault();
 
                     domDestiny  = $( domElement ).data( 'link' );
-                    domDestiny  = ( index === 0 ) ? $( domDestiny ).offset().top : domDestiny  = $( domDestiny ).offset().top - 78;
+                    domDestiny  = ( index === 0 ) ? $( domDestiny ).offset().top : domDestiny  = $( domDestiny ).offset().top - navHeight;
                     Equiver.smoothScroll ( domDestiny, 500 );
                 } );
             } );

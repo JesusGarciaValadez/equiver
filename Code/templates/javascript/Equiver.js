@@ -50,7 +50,14 @@
          */
         //  !Método inicializador
         init:                   function ( ) {
-            //Equiver.obtainActualDocument();
+            window.navigator.userAgent = userAgent    = ( window.navigator.userAgent );
+            //( deviceWidth >= minDeviceWidth && deviceWidth <= maxDeviceWidth ) ? isPortable  = true : isPortable  = false;
+            ( userAgent.indexOf( 'iPhone ' ) || userAgent.indexOf( 'Android' ) ) ? isPortable  = true : isPortable  = false;
+
+            window.typeOfDevice = typeOfDevice  = ( isPortable ) ? "mobile" : "desktop";
+
+            window.isPortable   = isPortable;
+            Equiver.tool = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
         },
         /**
          *
@@ -66,7 +73,7 @@
         //  !Realiza el efecto para dar la impresión de scroll "suavizado"
         smoothScroll:           function ( selector, durationInSec ) {
 
-            var _selector       = ( typeof( selector ) === "undefined" ) ? "*" : selector;
+            var _selector   = ( typeof( selector ) === "undefined" ) ? "*" : selector;
             _selector       = ( typeof( _selector ) === "object" ) ? _selector : ( typeof( _selector ) === "number" ) ? _selector : $( _selector );
 
             var _durationInSec  = ( durationInSec === "" ) ? 1000 : durationInSec;

@@ -307,7 +307,7 @@ h1, h2, h3, h4, h5, h6
                         @extend .slide_control_current
     .modulos-mas-title
         background-color:  $header-background-color
-        height: 145px
+        height: 100px
         position: relative
         .central
             height: 100%
@@ -330,7 +330,7 @@ h1, h2, h3, h4, h5, h6
     .modulos-mas-content
         height: 522px
         .central
-            padding: 96px 0 0
+            padding: 55px 0 0
             position: relative
             h2,p,ul
                 clear: left
@@ -338,38 +338,50 @@ h1, h2, h3, h4, h5, h6
                 float: left
                 width: 305px
             h2, p
-                text-align: center
+                text-align: left
             p, ul li p
                 color: $text-normal
                 font-size: em( 10, 16 )
-                line-height: em( 10, 10 )
+                line-height: em( 15, 10 )
             h2
                 color: $titles
                 font-size: em( 15.7, 16 )
                 line-height: em( 16, 15.7 )
-                margin: 0 0 0 47px
+                margin: 10px 0 10px 47px
             p
-                margin: 10px 0 0 47px  
+                padding: 0 0 0 47px  
             ul
                 box-sizing: border-box
-                margin: 49px 0 0
-                padding: 0 0 0 175px
+                bottom: -6%
+                left: 50%
+                margin: 0 0 0 ( -720px / 2 )
+                padding: 0
+                position: absolute
+                width: auto
                 li
-                    height: 55px
-                    margin: 28px 0
+                    float: left
+                    height: 70px
+                    list-style: none inside
+                    padding: 0 0 0 70px
                     &:first-child
-                        margin: 0 0 28px
-                    &:last-child
-                        margin: 28px 0 0
+                        margin: 0
+                        padding: 0
                     p
-                        line-height: em( 66, 16 )
+                        box-sizing: border-box
+                        font-size: em( 10, 16 )
+                        line-height: em( 66, 10 )
+                        margin: 0
+                        padding: 0 0 0 70px
                         width: 100%
                 .people
-                    list-style: url("../../assets/img/home/icono1_modulo.png") outside
+                    p 
+                        background: url("../../assets/img/home/icono1_modulo.png") no-repeat scroll 0 0 transparent
                 .instrument
-                    list-style: url("../../assets/img/home/icono2_modulo.png") outside
+                    p
+                        background: url("../../assets/img/home/icono2_modulo.png") no-repeat scroll 0 0 transparent
                 .heart
-                    list-style: url("../../assets/img/home/icono3_modulo.png") outside
+                    p
+                        background: url("../../assets/img/home/icono3_modulo.png") no-repeat scroll 0 0 transparent
             img
     .schedule-events
         background-color:  $header-background-color
@@ -445,11 +457,12 @@ h1, h2, h3, h4, h5, h6
                 .event-2
                 .event-3
     .form
-        height: 585px
+        height: auto
+        padding: 0 0 10px
         form
             box-sizing: border-box
             height: 100%
-            padding: 50px 0 0
+            padding: 25px 0 0
             > legend, p
                 margin: 0
                 padding: 0
@@ -469,10 +482,10 @@ h1, h2, h3, h4, h5, h6
                 float: left
                 position: relative
             .left
-                height: 370px
-                margin: 105px 0 0
+                height: 340px
+                margin: 40px 0 0
                 padding: 0 52px 0 24px
-                width: 352px
+                width: 330px
                 h5
                     font-size: em( 15, 16 )
                     line-height: em( 15, 16 )
@@ -491,7 +504,7 @@ h1, h2, h3, h4, h5, h6
                         .youtube
                         .google
             .right
-                margin: 65px 0 0
+                margin: 38px 0 0
                 width: 608px
                 legend
                     color: $titles
@@ -639,7 +652,7 @@ h1, h2, h3, h4, h5, h6
             .logo-footer
                 margin-left: 30px
             .logos-footer
-                right: 0
+                right: 5%
                 li
                     list-style: none inside
                     a
