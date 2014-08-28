@@ -1429,7 +1429,7 @@ h1, h2, h3, h4, h5, h6 {
 /* line 603, ../../Code/templates/sass/home.sass */
 .home .social-footer-links {
   background-color: #96cc42;
-  height: 212px; }
+  height: 117px; }
   /* line 607, ../../Code/templates/sass/home.sass */
   .home .social-footer-links .central {
     -webkit-box-sizing: border-box;
@@ -1439,7 +1439,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 12px 0 0;
     position: relative; }
     /* line 612, ../../Code/templates/sass/home.sass */
-    .home .social-footer-links .central h6, .home .social-footer-links .central p {
+    .home .social-footer-links .central h6 {
       clear: left;
       color: white;
       display: inline-block;
@@ -1451,25 +1451,41 @@ h1, h2, h3, h4, h5, h6 {
       line-height: 1em; }
     /* line 621, ../../Code/templates/sass/home.sass */
     .home .social-footer-links .central p {
+      bottom: 5%;
+      color: white;
+      clear: both;
+      display: block;
       font-size: 0.63em;
       line-height: 1em;
-      margin: 5px 0 0; }
-    /* line 625, ../../Code/templates/sass/home.sass */
+      margin: 5px 0 0;
+      position: absolute;
+      text-align: center;
+      width: 100%; }
+      /* line 632, ../../Code/templates/sass/home.sass */
+      .home .social-footer-links .central p a {
+        color: white;
+        cursor: pointer;
+        text-decoration: none; }
+        /* line 636, ../../Code/templates/sass/home.sass */
+        .home .social-footer-links .central p a:hover, .home .social-footer-links .central p a:active, .home .social-footer-links .central p a:visited, .home .social-footer-links .central p a:link {
+          color: white;
+          text-decoration: underline; }
+    /* line 639, ../../Code/templates/sass/home.sass */
     .home .social-footer-links .central .logo-footer {
       margin-left: 30px; }
-    /* line 627, ../../Code/templates/sass/home.sass */
+    /* line 641, ../../Code/templates/sass/home.sass */
     .home .social-footer-links .central .logos-footer {
       right: 0; }
-      /* line 629, ../../Code/templates/sass/home.sass */
+      /* line 643, ../../Code/templates/sass/home.sass */
       .home .social-footer-links .central .logos-footer li {
         list-style: none inside; }
-        /* line 631, ../../Code/templates/sass/home.sass */
+        /* line 645, ../../Code/templates/sass/home.sass */
         .home .social-footer-links .central .logos-footer li a {
           color: #616161; }
-/* line 637, ../../Code/templates/sass/home.sass */
+/* line 651, ../../Code/templates/sass/home.sass */
 .home .footer {
   background-color: #1d1d1d; }
-  /* line 640, ../../Code/templates/sass/home.sass */
+  /* line 654, ../../Code/templates/sass/home.sass */
   .home .footer footer p {
     color: #616161;
     display: block;

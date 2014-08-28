@@ -602,14 +602,14 @@ h1, h2, h3, h4, h5, h6
                         text-transform: lowercase
     .social-footer-links
         background-color: $footer-background-social
-        height: 212px
+        height: 117px
         //height: 83px
         .central
             box-sizing: border-box
             height: 100%
             padding:  12px 0 0
             position: relative
-            h6, p
+            h6
                 clear: left
                 color: $white-color
                 display: inline-block
@@ -619,9 +619,23 @@ h1, h2, h3, h4, h5, h6
                 font-size: em( 22, 16 )
                 line-height: em( 22, 22 )
             p
+                bottom: 5%
+                color: $white-color
+                clear: both
+                display: block
                 font-size: em( 10, 16 )
                 line-height: em( 10, 10 )
                 margin: 5px 0 0
+                position: absolute
+                text-align: center
+                width: 100%
+                a
+                    color: $white-color
+                    cursor: pointer
+                    text-decoration: none
+                    &:hover, &:active, &:visited, &:link
+                        color: $white-color
+                        text-decoration: underline
             .logo-footer
                 margin-left: 30px
             .logos-footer
