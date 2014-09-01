@@ -855,7 +855,7 @@ textarea {
     display: inline-block; }
 /* line 120, ../../Code/templates/sass/home.sass */
 .profile-selector .pacient {
-  margin: 0 0 0 -416px; }
+  margin: 0 0 0 -480px; }
   /* line 123, ../../Code/templates/sass/home.sass */
   .profile-selector .pacient:after {
     left: -416px;
@@ -924,7 +924,7 @@ h1, h2, h3, h4, h5, h6 {
       line-height: 4.75em; }
 /* line 170, ../../Code/templates/sass/home.sass */
 .home .main {
-  height: 557px;
+  height: 555px;
   overflow: hidden;
   position: relative; }
   /* line 174, ../../Code/templates/sass/home.sass */
@@ -1043,23 +1043,24 @@ h1, h2, h3, h4, h5, h6 {
       .home .div-scrollable .scrollable .items div {
         float: left;
         height: 100%;
+        overflow: hidden;
         position: relative;
         width: 960px; }
-        /* line 275, ../../Code/templates/sass/home.sass */
+        /* line 276, ../../Code/templates/sass/home.sass */
         .home .div-scrollable .scrollable .items div img {
           float: left;
           position: absolute;
           top: 50%; }
-          /* line 279, ../../Code/templates/sass/home.sass */
+          /* line 280, ../../Code/templates/sass/home.sass */
           .home .div-scrollable .scrollable .items div img:nth-child(1n) {
             left: 0;
             margin: -269px 0 0; }
-          /* line 282, ../../Code/templates/sass/home.sass */
+          /* line 283, ../../Code/templates/sass/home.sass */
           .home .div-scrollable .scrollable .items div img:nth-child(2n) {
             left: auto;
             margin: -137.5px 0 0;
             right: 0; }
-    /* line 286, ../../Code/templates/sass/home.sass */
+    /* line 287, ../../Code/templates/sass/home.sass */
     .home .div-scrollable .scrollable .navigator {
       bottom: 47px;
       display: inline-block;
@@ -1067,7 +1068,7 @@ h1, h2, h3, h4, h5, h6 {
       left: 50%;
       margin: 0 auto;
       position: relative; }
-      /* line 293, ../../Code/templates/sass/home.sass */
+      /* line 294, ../../Code/templates/sass/home.sass */
       .home .div-scrollable .scrollable .navigator a {
         background-color: gainsboro;
         border-radius: 50%;
@@ -1076,27 +1077,27 @@ h1, h2, h3, h4, h5, h6 {
         height: 12px;
         margin: 0 5px;
         width: 12px; }
-        /* line 301, ../../Code/templates/sass/home.sass */
+        /* line 302, ../../Code/templates/sass/home.sass */
         .home .div-scrollable .scrollable .navigator a:first-child {
           margin: 0 5px 0 0; }
-        /* line 303, ../../Code/templates/sass/home.sass */
+        /* line 304, ../../Code/templates/sass/home.sass */
         .home .div-scrollable .scrollable .navigator a:last-child {
           margin: 0 0 0 5px; }
-        /* line 305, ../../Code/templates/sass/home.sass */
+        /* line 306, ../../Code/templates/sass/home.sass */
         .home .div-scrollable .scrollable .navigator a:hover, .home .div-scrollable .scrollable .navigator a.active {
           background-color: #96cc42; }
-/* line 307, ../../Code/templates/sass/home.sass */
+/* line 308, ../../Code/templates/sass/home.sass */
 .home .modulos-mas-title {
   height: 80px;
   position: relative; }
-  /* line 310, ../../Code/templates/sass/home.sass */
+  /* line 311, ../../Code/templates/sass/home.sass */
   .home .modulos-mas-title .central {
     height: 100%;
     position: relative; }
-    /* line 314, ../../Code/templates/sass/home.sass */
+    /* line 315, ../../Code/templates/sass/home.sass */
     .home .modulos-mas-title .central .logo {
       margin-left: 45px; }
-    /* line 317, ../../Code/templates/sass/home.sass */
+    /* line 318, ../../Code/templates/sass/home.sass */
     .home .modulos-mas-title .central h1 {
       color: #616161;
       font-family: "Myriad Pro",Helvetica, Arial, "sans-serif";
@@ -1108,30 +1109,30 @@ h1, h2, h3, h4, h5, h6 {
       margin: -16.5px 0 0 50px;
       position: absolute;
       top: 50%; }
-/* line 326, ../../Code/templates/sass/home.sass */
+/* line 327, ../../Code/templates/sass/home.sass */
 .home .modulos-mas-content {
   height: 522px; }
-  /* line 328, ../../Code/templates/sass/home.sass */
+  /* line 329, ../../Code/templates/sass/home.sass */
   .home .modulos-mas-content .central {
     padding: 40px 0 0;
     position: relative; }
-    /* line 331, ../../Code/templates/sass/home.sass */
+    /* line 332, ../../Code/templates/sass/home.sass */
     .home .modulos-mas-content .central h2, .home .modulos-mas-content .central p, .home .modulos-mas-content .central ul {
       clear: left;
       display: inline-block;
       float: left;
       width: 265px; }
-    /* line 336, ../../Code/templates/sass/home.sass */
+    /* line 337, ../../Code/templates/sass/home.sass */
     .home .modulos-mas-content .central h2, .home .modulos-mas-content .central p {
       text-align: left; }
-    /* line 338, ../../Code/templates/sass/home.sass */
+    /* line 339, ../../Code/templates/sass/home.sass */
     .home .modulos-mas-content .central p, .home .modulos-mas-content .central ul li p {
       color: #616161;
       font-family: "Myriad Pro",Helvetica, Arial, "sans-serif";
       font-size: 0.63em;
       font-weight: normal;
       line-height: 1.5em; }
-    /* line 340, ../../Code/templates/sass/home.sass */
+    /* line 341, ../../Code/templates/sass/home.sass */
     .home .modulos-mas-content .central h2 {
       color: #d63234;
       font-family: "Myriad Pro",Helvetica, Arial, "sans-serif";
@@ -1139,10 +1140,10 @@ h1, h2, h3, h4, h5, h6 {
       font-weight: normal;
       line-height: 1.02em;
       margin: 10px 0 10px 47px; }
-    /* line 343, ../../Code/templates/sass/home.sass */
+    /* line 344, ../../Code/templates/sass/home.sass */
     .home .modulos-mas-content .central p {
       padding: 0 0 0 47px; }
-    /* line 345, ../../Code/templates/sass/home.sass */
+    /* line 346, ../../Code/templates/sass/home.sass */
     .home .modulos-mas-content .central ul {
       -webkit-box-sizing: border-box;
          -moz-box-sizing: border-box;
@@ -1153,17 +1154,17 @@ h1, h2, h3, h4, h5, h6 {
       padding: 0;
       position: absolute;
       width: auto; }
-      /* line 353, ../../Code/templates/sass/home.sass */
+      /* line 354, ../../Code/templates/sass/home.sass */
       .home .modulos-mas-content .central ul li {
         float: left;
         height: 70px;
         list-style: none inside;
         padding: 0 0 0 70px; }
-        /* line 358, ../../Code/templates/sass/home.sass */
+        /* line 359, ../../Code/templates/sass/home.sass */
         .home .modulos-mas-content .central ul li:first-child {
           margin: 0;
           padding: 0; }
-        /* line 361, ../../Code/templates/sass/home.sass */
+        /* line 362, ../../Code/templates/sass/home.sass */
         .home .modulos-mas-content .central ul li p {
           -webkit-box-sizing: border-box;
              -moz-box-sizing: border-box;
@@ -1173,23 +1174,23 @@ h1, h2, h3, h4, h5, h6 {
           margin: 0;
           padding: 0 0 0 70px;
           width: 100%; }
-      /* line 369, ../../Code/templates/sass/home.sass */
+      /* line 370, ../../Code/templates/sass/home.sass */
       .home .modulos-mas-content .central ul .people p {
         background: url("../../assets/img/home/icono1_modulo.png") no-repeat scroll 0 0 transparent; }
-      /* line 372, ../../Code/templates/sass/home.sass */
+      /* line 373, ../../Code/templates/sass/home.sass */
       .home .modulos-mas-content .central ul .instrument p {
         background: url("../../assets/img/home/icono2_modulo.png") no-repeat scroll 0 0 transparent; }
-      /* line 375, ../../Code/templates/sass/home.sass */
+      /* line 376, ../../Code/templates/sass/home.sass */
       .home .modulos-mas-content .central ul .heart p {
         background: url("../../assets/img/home/icono3_modulo.png") no-repeat scroll 0 0 transparent; }
-/* line 378, ../../Code/templates/sass/home.sass */
+/* line 379, ../../Code/templates/sass/home.sass */
 .home .schedule-events {
   background-color: #f3f2f7;
   height: 590px; }
-  /* line 381, ../../Code/templates/sass/home.sass */
+  /* line 382, ../../Code/templates/sass/home.sass */
   .home .schedule-events .central {
     padding: 65px 0 0; }
-    /* line 383, ../../Code/templates/sass/home.sass */
+    /* line 384, ../../Code/templates/sass/home.sass */
     .home .schedule-events .central h2 {
       color: #616161;
       font-family: "Myriad Pro",Helvetica, Arial, "sans-serif";
@@ -1199,17 +1200,17 @@ h1, h2, h3, h4, h5, h6 {
       height: 23px;
       margin: 0 0 78px;
       text-align: center; }
-    /* line 390, ../../Code/templates/sass/home.sass */
+    /* line 391, ../../Code/templates/sass/home.sass */
     .home .schedule-events .central .events-indicator-container > div {
       float: left;
       height: 225px;
       overflow: hidden;
       position: relative;
       width: 320px; }
-      /* line 397, ../../Code/templates/sass/home.sass */
+      /* line 398, ../../Code/templates/sass/home.sass */
       .home .schedule-events .central .events-indicator-container > div:hover .event-description {
         display: inline-block; }
-      /* line 399, ../../Code/templates/sass/home.sass */
+      /* line 400, ../../Code/templates/sass/home.sass */
       .home .schedule-events .central .events-indicator-container > div .event-description {
         background-color: rgba(0, 0, 0, 0.5);
         display: none;
@@ -1218,13 +1219,13 @@ h1, h2, h3, h4, h5, h6 {
         position: absolute;
         top: 0;
         width: 100%; }
-        /* line 407, ../../Code/templates/sass/home.sass */
+        /* line 408, ../../Code/templates/sass/home.sass */
         .home .schedule-events .central .events-indicator-container > div .event-description h3, .home .schedule-events .central .events-indicator-container > div .event-description p {
           color: white;
           margin: 0 auto;
           text-align: center;
           width: 256px; }
-        /* line 412, ../../Code/templates/sass/home.sass */
+        /* line 413, ../../Code/templates/sass/home.sass */
         .home .schedule-events .central .events-indicator-container > div .event-description h3 {
           color: black;
           font-family: "Myriad Pro",Helvetica, Arial, "sans-serif";
@@ -1234,30 +1235,30 @@ h1, h2, h3, h4, h5, h6 {
           height: 17px;
           margin-bottom: 23px;
           margin-top: 85px; }
-        /* line 418, ../../Code/templates/sass/home.sass */
+        /* line 419, ../../Code/templates/sass/home.sass */
         .home .schedule-events .central .events-indicator-container > div .event-description p {
           color: black;
           font-family: "Myriad Pro",Helvetica, Arial, "sans-serif";
           font-size: 0.63em;
           font-weight: normal;
           line-height: 1.5em; }
-    /* line 426, ../../Code/templates/sass/home.sass */
+    /* line 427, ../../Code/templates/sass/home.sass */
     .home .schedule-events .central .events-descriptions-container {
       padding: 60px 0 0; }
-      /* line 428, ../../Code/templates/sass/home.sass */
+      /* line 429, ../../Code/templates/sass/home.sass */
       .home .schedule-events .central .events-descriptions-container > div {
         display: none;
         margin: 0 auto;
         width: 640px; }
-        /* line 432, ../../Code/templates/sass/home.sass */
+        /* line 433, ../../Code/templates/sass/home.sass */
         .home .schedule-events .central .events-descriptions-container > div:first-child {
           display: block; }
-        /* line 434, ../../Code/templates/sass/home.sass */
+        /* line 435, ../../Code/templates/sass/home.sass */
         .home .schedule-events .central .events-descriptions-container > div h4, .home .schedule-events .central .events-descriptions-container > div p {
           display: block;
           margin: 0 auto;
           text-align: center; }
-        /* line 438, ../../Code/templates/sass/home.sass */
+        /* line 439, ../../Code/templates/sass/home.sass */
         .home .schedule-events .central .events-descriptions-container > div h4.title {
           color: black;
           font-family: "Myriad Pro",Helvetica, Arial, "sans-serif";
@@ -1265,30 +1266,30 @@ h1, h2, h3, h4, h5, h6 {
           font-weight: normal;
           line-height: 1em;
           margin: 0 0 16px; }
-        /* line 441, ../../Code/templates/sass/home.sass */
+        /* line 442, ../../Code/templates/sass/home.sass */
         .home .schedule-events .central .events-descriptions-container > div p {
           color: black;
           font-family: "Myriad Pro",Helvetica, Arial, "sans-serif";
           font-size: 0.56em;
           font-weight: normal;
           line-height: 1.5em; }
-/* line 446, ../../Code/templates/sass/home.sass */
+/* line 447, ../../Code/templates/sass/home.sass */
 .home .form {
   height: auto;
   padding: 0 0 10px; }
-  /* line 449, ../../Code/templates/sass/home.sass */
+  /* line 450, ../../Code/templates/sass/home.sass */
   .home .form form {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
     height: 100%;
     padding: 25px 0 0; }
-    /* line 453, ../../Code/templates/sass/home.sass */
+    /* line 454, ../../Code/templates/sass/home.sass */
     .home .form form > legend, .home .form form p {
       margin: 0;
       padding: 0;
       text-align: center; }
-    /* line 457, ../../Code/templates/sass/home.sass */
+    /* line 458, ../../Code/templates/sass/home.sass */
     .home .form form > legend {
       color: #d63234;
       font-family: "Myriad Pro",Helvetica, Arial, "sans-serif";
@@ -1296,27 +1297,27 @@ h1, h2, h3, h4, h5, h6 {
       font-weight: normal;
       line-height: 1em;
       margin: 0 0 20px; }
-    /* line 461, ../../Code/templates/sass/home.sass */
+    /* line 462, ../../Code/templates/sass/home.sass */
     .home .form form p {
       color: #616161;
       font-family: "Myriad Pro",Helvetica, Arial, "sans-serif";
       font-size: 0.88em;
       font-weight: normal;
       line-height: 1em; }
-    /* line 463, ../../Code/templates/sass/home.sass */
+    /* line 464, ../../Code/templates/sass/home.sass */
     .home .form form fieldset {
       -webkit-box-sizing: border-box;
          -moz-box-sizing: border-box;
               box-sizing: border-box;
       float: left;
       position: relative; }
-    /* line 467, ../../Code/templates/sass/home.sass */
+    /* line 468, ../../Code/templates/sass/home.sass */
     .home .form form .left {
       height: 340px;
       margin: 40px 0 0;
       padding: 0 52px 0 24px;
       width: 330px; }
-      /* line 472, ../../Code/templates/sass/home.sass */
+      /* line 473, ../../Code/templates/sass/home.sass */
       .home .form form .left h5 {
         color: black;
         font-family: Helvetica, Arial, "sans-serif";
@@ -1324,7 +1325,7 @@ h1, h2, h3, h4, h5, h6 {
         font-weight: normal;
         line-height: 1em;
         margin: 0 0 25px; }
-      /* line 475, ../../Code/templates/sass/home.sass */
+      /* line 476, ../../Code/templates/sass/home.sass */
       .home .form form .left p {
         color: black;
         font-family: Helvetica, Arial, "sans-serif";
@@ -1334,11 +1335,11 @@ h1, h2, h3, h4, h5, h6 {
         clear: both;
         display: block;
         width: 100%; }
-    /* line 487, ../../Code/templates/sass/home.sass */
+    /* line 488, ../../Code/templates/sass/home.sass */
     .home .form form .right {
       margin: 38px 0 0;
       width: 608px; }
-      /* line 490, ../../Code/templates/sass/home.sass */
+      /* line 491, ../../Code/templates/sass/home.sass */
       .home .form form .right legend {
         color: #d63234;
         font-family: "Myriad Pro",Helvetica, Arial, "sans-serif";
@@ -1346,10 +1347,10 @@ h1, h2, h3, h4, h5, h6 {
         font-weight: normal;
         line-height: 1em;
         margin: 0 0 18px; }
-      /* line 493, ../../Code/templates/sass/home.sass */
+      /* line 494, ../../Code/templates/sass/home.sass */
       .home .form form .right .input {
         float: left; }
-        /* line 495, ../../Code/templates/sass/home.sass */
+        /* line 496, ../../Code/templates/sass/home.sass */
         .home .form form .right .input input[type="text"], .home .form form .right .input input[type="tel"], .home .form form .right .input input[type="email"], .home .form form .right .input textarea {
           background-color: #e5e5e5;
           border: 0 none transparent;
@@ -1357,7 +1358,7 @@ h1, h2, h3, h4, h5, h6 {
           font-size: 0.75em;
           line-height: 2.92em;
           width: 100%; }
-        /* line 502, ../../Code/templates/sass/home.sass */
+        /* line 503, ../../Code/templates/sass/home.sass */
         .home .form form .right .input input[placeholder], .home .form form .right .input ::-moz-placeholder, .home .form form .right .input input:-moz-placeholder, .home .form form .right .input textarea[placeholder], .home .form form .right .input textarea:-moz-placeholder {
           color: #616161;
           font-family: "Myriad Pro",Helvetica, Arial, "sans-serif";
@@ -1366,28 +1367,28 @@ h1, h2, h3, h4, h5, h6 {
           line-height: 2.92em;
           text-indent: 10px;
           text-overflow: ellipsis; }
-      /* line 506, ../../Code/templates/sass/home.sass */
+      /* line 507, ../../Code/templates/sass/home.sass */
       .home .form form .right .text {
         margin: 0 69px 22px 0;
         width: 220px; }
-        /* line 509, ../../Code/templates/sass/home.sass */
+        /* line 510, ../../Code/templates/sass/home.sass */
         .home .form form .right .text input[type="text"] {
           height: 30px; }
-      /* line 511, ../../Code/templates/sass/home.sass */
+      /* line 512, ../../Code/templates/sass/home.sass */
       .home .form form .right .textarea {
         margin: 3px 0 20px;
         width: 508px; }
-        /* line 514, ../../Code/templates/sass/home.sass */
+        /* line 515, ../../Code/templates/sass/home.sass */
         .home .form form .right .textarea textarea {
           height: 132px;
           resize: none; }
-      /* line 517, ../../Code/templates/sass/home.sass */
+      /* line 518, ../../Code/templates/sass/home.sass */
       .home .form form .right .submit {
         clear: both;
         display: block;
         float: right;
         margin: 0 99px 0 0; }
-        /* line 522, ../../Code/templates/sass/home.sass */
+        /* line 523, ../../Code/templates/sass/home.sass */
         .home .form form .right .submit input[type="submit"] {
           color: #616161;
           font-family: "Myriad Pro",Helvetica, Arial, "sans-serif";
@@ -1402,30 +1403,30 @@ h1, h2, h3, h4, h5, h6 {
           text-indent: 0;
           -webkit-appearance: button;
           width: 94px; }
-          /* line 532, ../../Code/templates/sass/home.sass */
+          /* line 533, ../../Code/templates/sass/home.sass */
           .home .form form .right .submit input[type="submit"]:hover {
             background-color: #fa0007;
             color: white; }
-          /* line 535, ../../Code/templates/sass/home.sass */
+          /* line 536, ../../Code/templates/sass/home.sass */
           .home .form form .right .submit input[type="submit"]:active {
             background-color: #ac0003;
             color: white; }
-/* line 538, ../../Code/templates/sass/home.sass */
+/* line 539, ../../Code/templates/sass/home.sass */
 .home .site-map {
   background-color: #1d1d1d;
   height: 212px; }
-  /* line 541, ../../Code/templates/sass/home.sass */
+  /* line 542, ../../Code/templates/sass/home.sass */
   .home .site-map .central {
     height: 100%;
     position: relative; }
-    /* line 544, ../../Code/templates/sass/home.sass */
+    /* line 545, ../../Code/templates/sass/home.sass */
     .home .site-map .central .logo-footer {
       margin-left: 30px; }
-    /* line 547, ../../Code/templates/sass/home.sass */
+    /* line 548, ../../Code/templates/sass/home.sass */
     .home .site-map .central ul, .home .site-map .central div {
       clear: right;
       float: right; }
-    /* line 550, ../../Code/templates/sass/home.sass */
+    /* line 551, ../../Code/templates/sass/home.sass */
     .home .site-map .central .site-map-titles {
       border-bottom: 2px solid #959595;
       -webkit-box-sizing: border-box;
@@ -1436,22 +1437,22 @@ h1, h2, h3, h4, h5, h6 {
       margin: 50px 0 0;
       padding: 0 0 9px 75px;
       width: 480px; }
-      /* line 558, ../../Code/templates/sass/home.sass */
+      /* line 559, ../../Code/templates/sass/home.sass */
       .home .site-map .central .site-map-titles li {
         color: #2d730b;
         float: left;
         list-style: none inside;
         margin: 0 8px; }
-        /* line 563, ../../Code/templates/sass/home.sass */
+        /* line 564, ../../Code/templates/sass/home.sass */
         .home .site-map .central .site-map-titles li:first-child {
           margin: 0 7px 0 0; }
-        /* line 565, ../../Code/templates/sass/home.sass */
+        /* line 566, ../../Code/templates/sass/home.sass */
         .home .site-map .central .site-map-titles li:last-child {
           margin: 0 0 0 7px; }
-    /* line 567, ../../Code/templates/sass/home.sass */
+    /* line 568, ../../Code/templates/sass/home.sass */
     .home .site-map .central .site-map-links {
       width: 405px; }
-      /* line 569, ../../Code/templates/sass/home.sass */
+      /* line 570, ../../Code/templates/sass/home.sass */
       .home .site-map .central .site-map-links ul {
         -webkit-box-sizing: border-box;
            -moz-box-sizing: border-box;
@@ -1459,22 +1460,22 @@ h1, h2, h3, h4, h5, h6 {
         float: left;
         margin: 13px 0 0;
         padding: 0; }
-        /* line 574, ../../Code/templates/sass/home.sass */
+        /* line 575, ../../Code/templates/sass/home.sass */
         .home .site-map .central .site-map-links ul:nth-child(1n) {
           width: 16%; }
-        /* line 576, ../../Code/templates/sass/home.sass */
+        /* line 577, ../../Code/templates/sass/home.sass */
         .home .site-map .central .site-map-links ul:nth-child(2n) {
           width: 24%; }
-        /* line 578, ../../Code/templates/sass/home.sass */
+        /* line 579, ../../Code/templates/sass/home.sass */
         .home .site-map .central .site-map-links ul:nth-child(3n) {
           width: 25%; }
-        /* line 580, ../../Code/templates/sass/home.sass */
+        /* line 581, ../../Code/templates/sass/home.sass */
         .home .site-map .central .site-map-links ul:nth-child(4n) {
           width: 21%; }
-        /* line 582, ../../Code/templates/sass/home.sass */
+        /* line 583, ../../Code/templates/sass/home.sass */
         .home .site-map .central .site-map-links ul:nth-child(5n) {
           width: 13%; }
-        /* line 584, ../../Code/templates/sass/home.sass */
+        /* line 585, ../../Code/templates/sass/home.sass */
         .home .site-map .central .site-map-links ul li {
           color: #616161;
           font-family: "Myriad Pro",Helvetica, Arial, "sans-serif";
@@ -1484,11 +1485,11 @@ h1, h2, h3, h4, h5, h6 {
           list-style: none inside;
           margin: 0 0 5px;
           text-transform: lowercase; }
-/* line 589, ../../Code/templates/sass/home.sass */
+/* line 590, ../../Code/templates/sass/home.sass */
 .home .social-footer-links {
   background-color: #96cc42;
   height: 117px; }
-  /* line 593, ../../Code/templates/sass/home.sass */
+  /* line 594, ../../Code/templates/sass/home.sass */
   .home .social-footer-links .central {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
@@ -1496,21 +1497,21 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     padding: 12px 0 0;
     position: relative; }
-    /* line 598, ../../Code/templates/sass/home.sass */
+    /* line 599, ../../Code/templates/sass/home.sass */
     .home .social-footer-links .central h6 {
       clear: left;
       color: white;
       display: inline-block;
       float: left;
       width: 395px; }
-    /* line 604, ../../Code/templates/sass/home.sass */
+    /* line 605, ../../Code/templates/sass/home.sass */
     .home .social-footer-links .central h6 {
       color: black;
       font-family: Helvetica, Arial, "sans-serif";
       font-size: 1.38em;
       font-weight: normal;
       line-height: 1em; }
-    /* line 606, ../../Code/templates/sass/home.sass */
+    /* line 607, ../../Code/templates/sass/home.sass */
     .home .social-footer-links .central p {
       color: white;
       font-family: "Myriad Pro",Helvetica, Arial, "sans-serif";
@@ -1524,31 +1525,31 @@ h1, h2, h3, h4, h5, h6 {
       position: absolute;
       text-align: center;
       width: 100%; }
-      /* line 615, ../../Code/templates/sass/home.sass */
+      /* line 616, ../../Code/templates/sass/home.sass */
       .home .social-footer-links .central p a {
         color: white;
         cursor: pointer;
         text-decoration: none; }
-        /* line 619, ../../Code/templates/sass/home.sass */
+        /* line 620, ../../Code/templates/sass/home.sass */
         .home .social-footer-links .central p a:hover, .home .social-footer-links .central p a:active, .home .social-footer-links .central p a:visited, .home .social-footer-links .central p a:link {
           color: white;
           text-decoration: underline; }
-    /* line 622, ../../Code/templates/sass/home.sass */
+    /* line 623, ../../Code/templates/sass/home.sass */
     .home .social-footer-links .central .logo-footer {
       margin-left: 30px; }
-    /* line 624, ../../Code/templates/sass/home.sass */
+    /* line 625, ../../Code/templates/sass/home.sass */
     .home .social-footer-links .central .logos-footer {
       right: 5%; }
-      /* line 626, ../../Code/templates/sass/home.sass */
+      /* line 627, ../../Code/templates/sass/home.sass */
       .home .social-footer-links .central .logos-footer li {
         list-style: none inside; }
-        /* line 628, ../../Code/templates/sass/home.sass */
+        /* line 629, ../../Code/templates/sass/home.sass */
         .home .social-footer-links .central .logos-footer li a {
           color: #616161; }
-/* line 634, ../../Code/templates/sass/home.sass */
+/* line 635, ../../Code/templates/sass/home.sass */
 .home .footer {
   background-color: #1d1d1d; }
-  /* line 637, ../../Code/templates/sass/home.sass */
+  /* line 638, ../../Code/templates/sass/home.sass */
   .home .footer footer p {
     color: #616161;
     font-family: "Myriad Pro",Helvetica, Arial, "sans-serif";
