@@ -11,7 +11,7 @@
 ( function ( $, window, document, undefined ) {
     //  Revisa la disponibilidad de localStorage
     var storage, deviceWidth, isPortable, typeOfDevice, minDeviceWidth = 320, 
-    maxDeviceWidth = 568, timeLapseOfCarrousel = 6000, scrollOffsetOfSlide = 632;
+    maxDeviceWidth = 568, timeLapseOfCarrousel = 6000, scrollOffsetOfSlide = 681;
     if( 'localStorage' in window && window.localStorage !== null ) {
         storage = localStorage;
     } else {
@@ -55,10 +55,14 @@
 
         //  Ancla el menú si bajamos mas allá de la posición normal del menú
         if ( Equiver.tool > 680 ) {
+            Equiver.overflow();
             Equiver.anchorMenu ( $( '.nav' ), 680, "anchored", "unanchored" );
         }
         
+        //  Revisa si al recargar la página, el scroll del sitio se encuentra 
+        //  mas abajo de lo normal para anclar el menú
         $( window ).on( 'scroll', function ( e ) {
+            Equiver.overflow();
             Equiver.anchorMenu ( $( '.nav' ), 680, "anchored", "unanchored" );
         } );
 
@@ -72,12 +76,14 @@
                     e.stopPropagation();
                     e.preventDefault();
 
-                    domDestiny  = $( e.currentTarget ).data( 'link' );
+                    $( '.sections-menu li' ).eq( 0 ).find( 'a' ).click();
+                    /*domDestiny  = $( e.currentTarget ).data( 'link' );
                     domDestiny  = $( domDestiny ).offset().top;
-                    Equiver.smoothScroll ( domDestiny, 500 );
+                    Equiver.smoothScroll ( domDestiny, 500 );*/
                 } );
             }
 
+            //  Si click en el logo del nav, manda a "home"
             $( 'nav .logo' ).on( 'click', function ( e ) {
                 e.stopPropagation();
                 e.preventDefault();
@@ -93,6 +99,7 @@
                     e.stopPropagation();
                     e.preventDefault();
 
+                    console.log( 'hi' );
                     domDestiny      = $( domElement ).data( 'link' );
                     sectionMinusBar = $( domDestiny ).offset().top - navHeight;
                     domDestiny  = ( index === 0 ) ? scrollOffsetOfSlide : sectionMinusBar;
@@ -120,6 +127,17 @@
                 interval: 10000,
                 autoplay: false,
                 autopause: false
+            } );
+        }
+
+        //  Control de sección de eventos
+        if ( $( '.events-indicator-container .event-description' ).exists() ) {
+
+            $( '.events-indicator-container' ).on( 'click', '.event[rel="trigger"]', function ( e ) {
+                e.preventDefault();
+                e.stopPropagation();
+
+
             } );
         }
     } );

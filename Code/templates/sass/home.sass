@@ -1,3 +1,5 @@
+html, body
+    overflow: hidden
 .wrapper
     font: normal 16px/24px Helvetica, Arial, "sans-serif"
     a
@@ -16,15 +18,16 @@
 .logo, .logo-footer
     display: inline-block
     height: auto
+    left: 10px
     position: absolute
     top: 50%
     width: auto
     img
 .logo
-    margin: -35px 0 0
+    margin: ( -53px / 2 ) 0 0
     img
 .logo-footer
-    margin: -53.5px 0 0
+    margin: ( -107px / 2 ) 0 0
     img
 .logos-small, .logos-big, .logos-footer
     display: inline-block
@@ -104,7 +107,7 @@
             width: 100%
             z-index: 5
         &:nth-child( 1n ):after
-            content: "Paciente"
+            content: "Público"
             left: 0
             text-align: right
             padding: 0 em( 57, 30 ) 0 0
@@ -117,9 +120,9 @@
         &:hover
             &:after
                 display: inline-block
-    .pacient
+    .public
         @extend .paciente_intro_BN
-        margin: 0 0 0 -480px
+        margin: 0 0 0 -510px
         &:after
             left: -416px
             transition: left 5s
@@ -151,22 +154,21 @@ h1, h2, h3, h4, h5, h6
     position: fixed
     top: 0
 .unanchored
-    position: static
+    position: absolute
+.free
+    padding: 130px 0 0 !important
 .home
     .header
         background-color: $header-background-color
         height: 76px
         header
+            height: 100%
             position: relative
             a
             .logo
             .logos-small
                 border-right: 2px solid $menu-separator
                 right: 100px
-            .intro-link
-                color: $header-title
-                float: right
-                line-height: em( 76, 16 )
     .main
         height: 555px
         overflow: hidden
@@ -220,6 +222,14 @@ h1, h2, h3, h4, h5, h6
             .logo
             .logos-small
                 left: 17%
+            .public-indicator, ul li a
+                @include font-mask( normal, em( 14, 16 ), em( 33, 14 ), $font, $text-normal )
+            .public-indicator
+                color: $header-title
+                float: right
+                margin: ( -33px / 2 ) 15px 0 0
+                position: relative
+                top: 50%
             .sections-menu
                 border-left: 2px solid $menu-separator
                 float: right
@@ -233,12 +243,12 @@ h1, h2, h3, h4, h5, h6
                     &:last-child
                         margin: 0 35px 0 17.5px
                     a
-                        @include font-mask( normal, em( 13, 16 ), em( 33, 13 ), $font, $text-normal )
                         &:hover
                             color: $text-active
                             text-decoration: none
     .div-scrollable
         height: 593px
+        padding: 80px 0 0
         .scrollable
             height: 100%
             position: relative
@@ -306,7 +316,7 @@ h1, h2, h3, h4, h5, h6
                     &:hover, &.active
                         background-color: $current-slide-indicator-background
     .modulos-mas-title
-        height: 80px
+        height: 100px
         position: relative
         .central
             height: 100%
@@ -323,7 +333,6 @@ h1, h2, h3, h4, h5, h6
                 position: absolute
                 top: 50%
                 strong
-
     .modulos-mas-content
         height: 522px
         .central
@@ -333,11 +342,11 @@ h1, h2, h3, h4, h5, h6
                 clear: left
                 display: inline-block
                 float: left
-                width: 265px
+                width: 310px
             h2, p
                 text-align: left
             p, ul li p
-                @include font-mask( normal, em( 10, 16 ), em( 15, 10 ), $font, $text-normal )
+                @include font-mask( normal, em( 14, 16 ), em( 15, 14 ), $font, $text-normal )
             h2
                 @include font-mask( normal, em( 15.7, 16 ), em( 16, 15.7 ), $font, $titles )
                 margin: 10px 0 10px 47px
@@ -345,7 +354,7 @@ h1, h2, h3, h4, h5, h6
                 padding: 0 0 0 47px  
             ul
                 box-sizing: border-box
-                bottom: -20%
+                bottom: -32%
                 left: 50%
                 margin: 0 0 0 ( -720px / 2 )
                 padding: 0
@@ -388,9 +397,11 @@ h1, h2, h3, h4, h5, h6
                 text-align: center
                 strong
             .events-indicator-container
+                margin: 0 auto
+                width: 700px
                 > div
                     float: left
-                    height: 225px
+                    height: 211px
                     overflow: hidden
                     position: relative
                     width: 320px
@@ -406,7 +417,7 @@ h1, h2, h3, h4, h5, h6
                         top: 0
                         width: 100%
                         h3, p
-                            color: $white-color
+                            color: $white-color !important
                             margin: 0 auto
                             text-align: center
                             width: 256px
@@ -417,17 +428,17 @@ h1, h2, h3, h4, h5, h6
                             margin-top: 85px
                             strong
                         p
-                            @include font-mask( normal, em( 10, 16 ), em( 15, 10 ), $font )
-                .event-1
-                    img
-                .event-2
-                    img
-                .event-3
-                    img
+                            @include font-mask( normal, em( 14, 16 ), em( 15, 14 ), $font )
+                    &:nth-child( 1n )
+                        margin: 0 30px 0 0
+                        img
+                    &:nth-child( 2n )
+                        margin: 0 0 0 30px
+                        img
             .events-descriptions-container
                 padding: 60px 0 0
-                > div 
-                    display: none
+                > div
+                    display: block
                     margin: 0 auto
                     width: 640px
                     &:first-child
@@ -440,10 +451,7 @@ h1, h2, h3, h4, h5, h6
                         @include font-mask( normal, em( 15, 16 ), 1em, $font )
                         margin: 0 0 16px
                     p
-                        @include font-mask( normal, em( 9, 16 ), em( ( 9 * 1.5 ), 9 ), $font )
-                .event-1
-                .event-2
-                .event-3
+                        @include font-mask( normal, em( 14, 16 ), 1.5em, $font )
     .form
         height: auto
         padding: 0 0 10px
@@ -459,37 +467,21 @@ h1, h2, h3, h4, h5, h6
                 @include font-mask( normal, em( 28, 16 ), 1em, $font, $titles )
                 margin: 0 0 20px
                 strong
+            h5, fieldset legend
+                @include font-mask( normal, em( 14, 16 ), 1em, $font, $titles )
+            h5
+                margin: 15px 0
+                text-align: center
             p
-                @include font-mask( normal, em( 14, 16 ), 1em, $font, $text-normal )
+                @include font-mask( normal, em( 14, 16 ), 1.5em, $font, $text-normal )
             fieldset
                 box-sizing: border-box
-                float: left
                 position: relative
-            .left
-                height: 340px
-                margin: 40px 0 0
-                padding: 0 52px 0 24px
-                width: 330px
-                h5
-                    @include font-mask( normal, em( 15, 16 ), em( 15, 15 ) )
-                    margin: 0 0 25px
-                p
-                    @include font-mask( normal, em( 11, 16 ), em( 11, 11 ) )
-                    clear: both
-                    display: block
-                    width: 100%
-                .logos-big
-                    li
-                        a
-                        .facebook
-                        .twitter
-                        .youtube
-                        .google
-            .right
-                margin: 38px 0 0
-                width: 608px
                 legend
-                    @include font-mask( normal, em( 14, 16 ), 1em, $font, $titles )
+            .right
+                margin: 38px auto 0
+                width: 515px
+                legend
                     margin: 0 0 18px
                 .input
                     float: left
@@ -497,16 +489,18 @@ h1, h2, h3, h4, h5, h6
                         background-color:  $input-background
                         border: 0 none transparent
                         color: $text-normal
-                        font-size: em( 12, 16 )
-                        line-height: em( 35, 12 )
+                        font-size: em( 14, 16 )
+                        line-height: em( 35, 14 )
                         width: 100%
                     input[placeholder], ::-moz-placeholder, input:-moz-placeholder, textarea[placeholder], textarea:-moz-placeholder
-                        @include font-mask( normal, em( 12, 16 ), em( 35, 12 ), $font, $text-normal )
+                        @include font-mask( normal, em( 14, 16 ), em( 35, 14 ), $font, $text-normal )
                         text-indent: 10px
                         text-overflow: ellipsis
                 .text
                     margin: 0 69px 22px 0
                     width: 220px
+                    &:nth-child( 2n + 1 ) 
+                        margin: 0 0 22px
                     input[type="text"]
                         height: 30px
                 .textarea
@@ -519,7 +513,7 @@ h1, h2, h3, h4, h5, h6
                     clear: both
                     display: block
                     float: right
-                    margin: 0 99px 0 0
+                    margin: 0 5px 0 0
                     input[type="submit"]
                         @include font-mask( normal, em( 15, 16 ), em( 40, 15 ), $font, $text-normal )
                         background-color: $white-color
@@ -536,57 +530,6 @@ h1, h2, h3, h4, h5, h6
                         &:active
                             background-color: $submit-background-active
                             color: $white-color
-    .site-map
-        background-color:  $footer-background-links
-        height: 212px
-        .central
-            height: 100%
-            position: relative
-            .logo-footer
-                margin-left: 30px
-                img
-            ul, div
-                clear: right
-                float: right
-            .site-map-titles
-                border-bottom: 2px solid $horizontal-rule
-                box-sizing: border-box
-                clear: right
-                float: right
-                margin: 50px 0 0
-                padding: 0 0 9px 75px
-                width: 480px
-                li
-                    color: $text-active
-                    float: left
-                    list-style: none inside
-                    margin: 0 8px
-                    &:first-child
-                        margin: 0 7px 0 0
-                    &:last-child
-                        margin: 0 0 0 7px
-            .site-map-links
-                width: 405px
-                ul
-                    box-sizing: border-box
-                    float: left
-                    margin: 13px 0 0
-                    padding: 0
-                    &:nth-child( 1n )
-                        width: 16%
-                    &:nth-child( 2n )
-                        width: 24%
-                    &:nth-child( 3n )
-                        width: 25%
-                    &:nth-child( 4n )
-                        width: 21%
-                    &:nth-child( 5n )
-                        width: 13%
-                    li
-                        @include font-mask( normal, em( 10, 16 ), 1em, $font, $text-normal )
-                        list-style: none inside
-                        margin: 0 0 5px
-                        text-transform: lowercase
     .social-footer-links
         background-color: $footer-background-social
         height: 117px
@@ -605,8 +548,8 @@ h1, h2, h3, h4, h5, h6
             h6
                 @include font-mask( normal, em( 22, 16 ), 1em )
             p
-                @include font-mask( normal, em( 10, 16 ), 1em, $font, $white-color )
-                bottom: 5%
+                @include font-mask( normal, em( 14, 16 ), 1.5em, $font, $white-color )
+                bottom: 10%
                 clear: both
                 display: block
                 margin: 5px 0 0
@@ -636,7 +579,125 @@ h1, h2, h3, h4, h5, h6
         background-color:  $footer-background-links
         footer
             p
-                @include font-mask( normal, em( 9, 16 ), em( 32, 9 ), $font, $text-normal )
+                @include font-mask( normal, em( 14, 16 ), em( 32, 14 ), $font, $text-normal )
                 display: block
                 margin: 0 auto
                 text-align: center
+        .alert_background
+        background: none no-repeat scroll 0 0 rgba( 0, 0, 0, 0.9 )
+        display: none
+        height: 100%
+        width: 100%
+    .alert_box
+        background: none no-repeat scroll 0 0 transparent
+        border-radius: 0
+        box-shadow: 0
+        display: none
+        height: 100%
+        margin: 0 auto 0 !important
+        padding: 0
+        position: absolute
+        top: 0% !important
+        width: 100%
+        .close
+            color: transparent
+            position: absolute
+            right: 60px
+            top: 80px
+            &:hover
+        .video_testimonials_home_scrollable
+            display: block
+            height: 340px
+            left: auto
+            margin: -170px auto 0
+            overflow: hidden
+            position: relative
+            top: 33%
+            width: 603px
+            .video_items
+                display: block
+                height: 100%
+                position: relative
+                width: 2000em
+                div
+                    display: block
+                    float: left
+                    position: relative
+                    width: 603px 
+        .title_testimonials_home_scrollable
+            background: none no-repeat scroll 0 0 rgba( 0, 0, 0, 0.8 )
+            display: block
+            height: 130px
+            left: auto
+            margin: -75px auto 0
+            position: relative
+            top: 46%
+            width: 100%
+            .browser
+                margin: -20px auto 0
+                position: absolute
+                top: 50%
+            
+            .disabled
+                display: none
+                &:hover
+                    display: none  
+            .prev
+                left: 15%
+                &:hover
+            .next
+                right: 15%
+                &:hover
+            .title_testimoniales_home_wrapper
+                display: block
+                height: 100%
+                margin: 0 auto
+                overflow: hidden
+                position: relative
+                width: 600px
+                .title_items
+                    display: block
+                    margin: 0 auto
+                    overflow: hidden
+                    position: relative
+                    width: 2000em
+                    div
+                        display: block
+                        float: left
+                        height: 100%
+                        position: relative
+                        width: 600px
+                        h2, h3
+                            display: block
+                            margin: 0 auto
+                            padding: 0
+                            text-align: center
+                            text-transform: uppercase
+                            width: 100%
+                        h2
+                            @include font-mask( normal, em( 30, 16 ), em( 60, 30 ) )
+                        
+                        h3
+                            @include font-mask( normal, em( 30, 16 ), em( 60, 30 ) )
+        .navigator
+            bottom: 10%
+            display: block
+            height: 50px
+            left: 50%
+            margin: 0 0 0 ( -450px / 2 )
+            position: absolute
+            width: 456px
+            a
+                float: left
+                &:first-child
+                    &:hover
+                &:nth-child( 2n )
+                    &:hover
+                &:nth-child( 3n )
+                    &:hover
+                &:nth-child( 4n )
+                    &:hover
+                &:nth-child( 5n )
+                    &:hover
+                &.active
+                    border: 3px solid #000

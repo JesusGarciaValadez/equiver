@@ -58,6 +58,81 @@
 
             window.isPortable   = isPortable;
             Equiver.tool = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+
+            Equiver.overflow();
+
+            //  Crea una instancia de jQuery Overlay para el home de descubreone.mx
+            //  Calcula la distancia entre el margen izquierdo para posicionar
+            //  la capa del video. Si en menor de 0 (ocurre en iPhone) utiliza
+            //  el ancho del body en vez del ancho de la ventana para hacer
+            //  el cálculo
+            //  !Crea una instancia de jQuery Overlay
+            if ( $( '.alert_box' ).exists() ) {
+
+                GBSite.doOverlay( $( 'a.alert_trigger' ), {
+                        effect          :   'apple',
+                        mask            :   {
+                            color       :   '',
+                            loadSpeed   :   200,
+                            opacity     :   0.5
+                        },
+                        close           :   $( '.alert_box a.close' ),
+                        closeOnClick    :   true,
+                        closeOnEsc      :   true,
+                        speed           :   'normal',
+                        fixed           :   true,
+                        onBeforeLoad    :   function ( ) {
+                            GBSite.overlay      = $( '.alert_trigger' ).data( 'overlay' );
+
+                            GBSite.closer       = GBSite.overlay.getClosers;
+
+                            $( '.alert_background' ).height( '100%' );
+                            ( $( '.alert_box a.close' ).exists() ) ? true : $( '.alert_box' ).prepend( GBSite.overlay.getClosers() );
+                            $( '.alert_box' ).centerWidth();
+                            $( '.alert_box' ).centerHeight();
+                            ( $( '.alert_box p' ).text() == '' ) ? $( '.alert_box p' ).remove() : false;
+                        },
+                        onLoad          :   function ( ) {
+                            $( '.alert_background' ).fadeIn( 100 );
+                        },
+                        onBeforeClose   :   function ( ) {
+
+                            $( '.alert_box' ).fadeOut( 10, function ( ) {
+
+                                $( '.alert_background' ).fadeOut( 10 );
+                                if ( !$( '#home' ).exists() ) {
+                                    $( '.alert_box h2' ).text( '' );
+                                    $( '.alert_box h4' ).text( '' );
+                                    ( $( '.alert_box p' ).exists() ) ? $( '.alert_box p' ).remove( ) : false;
+                                    ( $( '.alert_box form' ).exists() ) ? $( '.alert_box form' ).remove( ) : false;
+                                    ( $( '.alert_box table' ).exists() ) ? $( '.alert_box table' ).remove( ) : false;
+                                    ( $( '.alert_box div' ).exists() ) ? $( '.alert_box div' ).remove( ) : false;
+                                    ( $( '.alert_box button' ).exists() ) ? $( '.alert_box button' ).remove( ) : false;
+                                    ( $( '.alert_box div.confirm' ).exists() ) ? $( '.alert_box div.confirm' ).remove( ) : false;
+                                }
+                            } );
+                        },
+                        onClose         :   function ( ) {
+                            if ( myVideo ) {
+
+                                myVideo.pause();
+                            }
+                        }
+                    } );
+
+                $( '.alert_background' ).height( $( 'body' ).height() );
+                $( window ).on( {
+                    resize: function ( e ) {
+                        $( '.overlay' ).centerWidth();
+                    },
+                    touchstart: function ( e ) {
+                        $( '.overlay' ).centerWidth();
+                    },
+                    touchend: function ( e ) {
+                        $( '.overlay' ).centerWidth();
+                    }
+                } );
+            }
         },
         /**
          *
@@ -354,6 +429,15 @@
                 },
                 type: "POST"
             } );
+        },
+        overflow: function () {
+            if ( Equiver.tool > 1 ) {
+                $( 'html, body' ).css( 'overflow', 'auto' );
+                $( '.div-scrollable' ).addClass( 'free' );
+            } else {
+                $( 'html, body' ).css( 'overflow', 'hidden' );
+                $( '.div-scrollable' ).removeClass( 'free' );
+            }
         }
     };
 
