@@ -997,9 +997,13 @@ h1, h2, h3, h4, h5, h6 {
       line-height: 2.36em; }
     /* line 227, ../../Code/templates/sass/home.sass */
     .home .nav nav .public-indicator {
-      color: #2f730d;
+      color: #bfdf8d;
+      font-family: "Myriad Pro",Helvetica, Arial, "sans-serif";
+      font-size: 1.38em;
+      font-weight: bold;
+      line-height: 1em;
       float: right;
-      margin: -16.5px 15px 0 0;
+      margin: -11px 15px 0 0;
       position: relative;
       top: 50%; }
     /* line 233, ../../Code/templates/sass/home.sass */
@@ -1376,7 +1380,7 @@ h1, h2, h3, h4, h5, h6 {
         margin: 0 69px 22px 0;
         width: 220px; }
         /* line 502, ../../Code/templates/sass/home.sass */
-        .home .form form .right .text:nth-child(2n + 1) {
+        .home .form form .right .text:nth-child(2n + 2) {
           margin: 0 0 22px; }
         /* line 504, ../../Code/templates/sass/home.sass */
         .home .form form .right .text input[type="text"] {

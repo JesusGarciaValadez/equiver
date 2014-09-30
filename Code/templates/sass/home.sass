@@ -225,9 +225,9 @@ h1, h2, h3, h4, h5, h6
             .public-indicator, ul li a
                 @include font-mask( normal, em( 14, 16 ), em( 33, 14 ), $font, $text-normal )
             .public-indicator
-                color: $header-title
+                @include font-mask( bold, em( 22, 16 ), 1em, $font, $profile-name )
                 float: right
-                margin: ( -33px / 2 ) 15px 0 0
+                margin: ( -22px / 2 ) 15px 0 0
                 position: relative
                 top: 50%
             .sections-menu
@@ -499,7 +499,7 @@ h1, h2, h3, h4, h5, h6
                 .text
                     margin: 0 69px 22px 0
                     width: 220px
-                    &:nth-child( 2n + 1 ) 
+                    &:nth-child( 2n + 2 ) 
                         margin: 0 0 22px
                     input[type="text"]
                         height: 30px
